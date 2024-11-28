@@ -17,3 +17,8 @@ body {
 .makeImageCircular {
     border-radius:50%;
   }
+
+
+.maxWidth200 {
+    max-width: 200px;
+}

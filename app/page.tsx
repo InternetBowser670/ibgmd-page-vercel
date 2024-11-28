@@ -47,13 +47,15 @@ export default function Page() {
           <br />
           <br />
           <br />
-          <div className="flex justify-center">
-            <Link href="/projects">click here to see my projects</Link>
+          <div className={"flex justify-center"  + " " + jetbrains_800weight.className}>
+            <Link className="flex" href="/projects">click ​<p style={{ textDecoration: 'underline' }}> here </p>​ to see my projects</Link>
           </div>
           <br />
-          <p className={"text-3xl text-blue-500" + " " + jetbrains_800weight.className}>
-                      THIS WEBSITE IS STILL IN THE EARLY ALPHA TESTING PAGE - DO NOT WORRY ABOUT MY PROGRAMMING SKILLS
-          </p>
+          <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
+            <p className={"text-5xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
+                        THIS WEBSITE IS STILL IN THE EARLY ALPHA TESTING PAGE - DO NOT WORRY ABOUT MY PROGRAMMING SKILLS
+            </p>
+          </div>
           
         </div>
         <div className="w-1/2">
