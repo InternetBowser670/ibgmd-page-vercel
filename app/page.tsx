@@ -50,6 +50,9 @@ export default function Page() {
           <div className="flex justify-center">
             <Link href="/projects">click here to see my projects</Link>
           </div>
+          <p className={"text-7xl text-blue-500" + " " + jetbrains_800weight.className}>
+                      THIS WEBSITE IS STILL IN THE EARLY ALPHA TESTING PAGE - DO NOT WORRY ABOUT MY PROGRAMMING SKILLS
+          </p>
           
         </div>
         <div className="w-1/2">
