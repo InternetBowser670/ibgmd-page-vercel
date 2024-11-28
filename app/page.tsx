@@ -38,7 +38,7 @@ export default function Page() {
                   </div>
                   
                   <p className={"text-lg" + " " + jetbrains_400weight.className}>
-                  ​  Houston, TX
+                  ​  Texas, USA
                   </p>
                 </div>
               </div>
