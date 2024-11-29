@@ -1,5 +1,4 @@
 import Link from "next/link"
-import PfpCarousel from '@/ui/homepage/pfp-carousel'
 import { JetBrains_Mono } from 'next/font/google'
 import { MapPinIcon } from '@heroicons/react/24/solid'
 
@@ -59,7 +58,7 @@ export default function Page() {
           
         </div>
         <div className="w-1/2">
-          <PfpCarousel />
+          
         </div>
       </div>
     </>
