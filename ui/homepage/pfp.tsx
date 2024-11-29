@@ -1,10 +1,23 @@
 import goofySkull from '@/public/goofyskull.png'
 import Image from 'next/image'
 
-export default function Pfp() {
+export default function Pfp({ size = "1em" }) {
     return (
-        <div className='borfer-1 border-solid border-l-fuchsia-500'>
-            <Image src={goofySkull} alt='pfp' width={70} className='makeImageCircular h-auto w-30 borfer-1 border-solid border-l-fuchsia-500' />
-        </div>
+        <div
+      className="rounded-full overflow-hidden flex items-center justify-center"
+      style={{
+        width: size,
+        height: size,
+      }}
+    >
+      <Image
+        src={goofySkull} // Replace with your image path
+        alt="Profile Picture"
+        
+        className="object-contain"
+        width={1000} // Large default size for resolution
+        height={1000}
+      />
+    </div>
     )
 }

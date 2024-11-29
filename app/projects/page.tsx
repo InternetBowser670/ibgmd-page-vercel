@@ -16,7 +16,7 @@ export default function Page() {
             <div className='flex justify-center items-center'>
                 <div>
                     <h1 className={"text-3xl" + " " + jetbrains_800weight.className}>
-                        Embarasiiing...
+                        This page is under construction
                     </h1>
                     <br />
                     <p className={"" + " " + jetbrains_400weight.className}>

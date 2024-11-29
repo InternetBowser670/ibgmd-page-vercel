@@ -16,23 +16,25 @@ const jetbrains_800weight = JetBrains_Mono({
 export default function Page() {
   return (
     <>
-      <div className="flex flex-row p-5">
-        <div className="w-1/2">
-          <div className="flex justify-center content-around">
-            <div>
+      <div className="flex flex-wrap gap-4 p-5">
+        <div className="max-w-500 flex-1">
+          <div className="flex justify-center content-around overflow-hidden border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
+            <div className="flex justify-center content-center">
+              <div className="flex content-center">
+                <div className="relative top-1/4">
+                 <Pfp size={"4em"}  />
+                </div>
+                
+              </div>
               <div className="">
                 <div>
-                  <h1 className={"text-3xl text-slate-600" + " " + jetbrains_400weight.className}>
+                  <h1 className={"text-3xl truncate  text-ellipsis text-slate-600" + " " + jetbrains_400weight.className}>
                     ibgmd/
                   </h1>
                 </div>  
                 <div className="flex justify-center">
-                  <p className={"text-7xl text-blue-500" + " " + jetbrains_800weight.className}>
-                      InternetB
-                  </p>
-                  <Pfp />
-                  <p className={"text-7xl text-blue-500" + " " + jetbrains_800weight.className}>
-                    wser
+                  <p className={"text-4xl truncate  sm:text-5xl md:text-6xl lg:text-7xl text-ellipsis text-blue-500" + " " + jetbrains_800weight.className}>
+                     InternetBowser
                   </p>
                   
                   
@@ -58,15 +60,55 @@ export default function Page() {
           <br />
           <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
             <p className={"text-5xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
-                        THIS WEBSITE IS STILL IN THE EARLY ALPHA TESTING PAGE - DO NOT WORRY ABOUT MY PROGRAMMING SKILLS
+                        THIS WEBSITE IS STILL IN THE EARLY DEVELOPEMENT PHASE - DO NOT WORRY ABOUT MY PROGRAMMING SKILLS
             </p>
           </div>
           
         </div>
-        <div className="w-1/2">
-          
+
+
+
+        <div className="max-w-500 border-solid border-2 border-red-600 rounded-3xl content-center flex-1">
+          <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
+              <p className={"text-4xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
+                        Website is currently being updated ~daily, hope to have a reasonable beta version by 12/7/24.
+              </p>
+            </div>
+
+            <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
+              <p className={"text-4xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
+                        Todo list:
+              </p>
+              <ul className="list-disc animate-rainbowText">
+                <li>
+                  <p className={"text-2xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
+                    ​ Contact me page
+                  </p>
+                </li>
+                <li>
+                  <p className={"text-2xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
+                    ​ Add projects
+                  </p>
+                </li>
+                <li>
+                  <p className={"text-2xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
+                    ​ About me page
+                  </p>
+                </li>
+                <li>
+                  <p className={"text-2xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
+                    ​ Add animations
+                  </p>
+                </li>
+                <li>
+                  <p className={"text-2xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
+                    ​ Add changelog
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
     </>
   )
 }
