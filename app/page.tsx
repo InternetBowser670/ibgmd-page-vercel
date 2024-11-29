@@ -74,41 +74,8 @@ export default function Page() {
                         Website is currently being updated ~daily, hope to have a reasonable beta version by 12/7/24.
               </p>
             </div>
-
-            <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
-              <p className={"text-4xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
-                        Todo list:
-              </p>
-              <ul className="list-disc animate-rainbowText">
-                <li>
-                  <p className={"text-2xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
-                    ​ Contact me page
-                  </p>
-                </li>
-                <li>
-                  <p className={"text-2xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
-                    ​ Add projects
-                  </p>
-                </li>
-                <li>
-                  <p className={"text-2xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
-                    ​ About me page
-                  </p>
-                </li>
-                <li>
-                  <p className={"text-2xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
-                    ​ Add animations
-                  </p>
-                </li>
-                <li>
-                  <p className={"text-2xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
-                    ​ Add changelog
-                  </p>
-                </li>
-              </ul>
             </div>
           </div>
-        </div>
     </>
   )
 }
