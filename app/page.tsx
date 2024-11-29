@@ -68,7 +68,7 @@ export default function Page() {
 
 
 
-        <div className="max-w-500 border-solid border-2 border-red-600 rounded-3xl content-center flex-1">
+        <div className="max-w-500  content-center flex-1">
           <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
               <p className={"text-4xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
                         Website is currently being updated ~daily, hope to have a reasonable beta version by 12/7/24.
