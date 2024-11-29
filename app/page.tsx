@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { JetBrains_Mono } from 'next/font/google'
 import { MapPinIcon } from '@heroicons/react/24/solid'
+import Pfp from '@/ui/homepage/pfp'
 
 const jetbrains_400weight = JetBrains_Mono({
   weight: '400',
@@ -27,8 +28,13 @@ export default function Page() {
                 </div>  
                 <div className="flex justify-center">
                   <p className={"text-7xl text-blue-500" + " " + jetbrains_800weight.className}>
-                      InternetBowser
+                      InternetB
                   </p>
+                  <Pfp />
+                  <p className={"text-7xl text-blue-500" + " " + jetbrains_800weight.className}>
+                    wser
+                  </p>
+                  
                   
                 </div>
                 <div className="flex">
