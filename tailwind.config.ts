@@ -7,6 +7,7 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./ui/**/*.{js,ts,jsx,tsx,mdx}"
   ],
+  important: true,
   theme: {
     extend: {
       keyframes: {

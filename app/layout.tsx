@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/ui/navbar"
 
 
 
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body
         className="m-5 antialiased"
       >
+        <Navbar />
         {children}
       </body>
     </html>

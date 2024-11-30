@@ -13,10 +13,8 @@ export default function Pfp({ size = "1em" }) {
       <Image
         src={goofySkull} // Replace with your image path
         alt="Profile Picture"
-        
+
         className="object-contain"
-        width={1000} // Large default size for resolution
-        height={1000}
       />
     </div>
     )
