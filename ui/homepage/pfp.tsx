@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Pfp({ size = "1em" }) {
     return (
         <div
-      className="rounded-full overflow-hidden flex items-center justify-center"
+      className="rounded-full overflow-hidden shrink flex items-center justify-center"
       style={{
         width: size,
         height: size,
@@ -13,8 +13,10 @@ export default function Pfp({ size = "1em" }) {
       <Image
         src={goofySkull} // Replace with your image path
         alt="Profile Picture"
-
+        
         className="object-contain"
+        width={1000} // Large default size for resolution
+        height={1000}
       />
     </div>
     )
