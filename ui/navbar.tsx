@@ -32,7 +32,7 @@ export default function Navbar() {
         <>
             <div className='hidden sm:flex w-full justify-center m-5 overflow-hidden'>
                 <div className='justify-center border-solid rounded-2xl min-w-500 flex content-center h-9 m-5 p-5 border-red-500 border-2'>
-                    <div className='relative bottom-4 w-15 h-14'>
+                    <div className='relative bottom-4 w-15 h-8'>
                         <div className='inline-grid grid-cols-4 gap-3 grid-rows-1'>
 
                             <div className='flex justify-center'>
@@ -45,7 +45,7 @@ export default function Navbar() {
                                             
                                 return (
                                     
-                                    <div className='flex flex-row w-30 justify-center' key={link.name}>
+                                    <div className='flex flex-row h-full w-30 justify-center' key={link.name}>
                                         <Link
                                             key={link.name}
                                             href={link.href}
