@@ -2,9 +2,11 @@
 
 import React from 'react';
 import { JetBrains_Mono } from 'next/font/google'
+import clsx from 'clsx';
+import { usePathname } from 'next/navigation';
 
-const jetbrains_400weight = JetBrains_Mono({
-    weight: '400',
+const jetbrains_800weight = JetBrains_Mono({
+    weight: '800',
     subsets: ['latin'],
   })
   
@@ -14,6 +16,18 @@ import Pfp from './homepage/pfp'
 
 export default function Navbar() {
 
+    const links = [
+        { name: 'Home', href: '/' },
+        {
+          name: 'Projects',
+          href: '/projects',
+        },
+        { name: 'Changelog', href: '/changelog' },
+      ];
+      
+
+    const pathname = usePathname();
+
     return (
         <>
             <div className='w-full flex justify-center m-5'>
@@ -21,23 +35,32 @@ export default function Navbar() {
                     <div className='relative bottom-4 w-15 h-11'>
                         <div className='flex h-11'>
 
-                                <Link className='h-10 overflow-hidden' href="/">
-                                    <Pfp size="2rem" />
-                                </Link>
+                            <Link className='h-10 overflow-hidden' href="/">
+                                <Pfp size="2rem" />
+                            </Link>
 
-                            <div className='flex flex-row m-5 relative bottom-10'>
-                                <ul className={`navbar-menu flex flex-row justify-center content-center ${jetbrains_400weight.className}`}>
-                                    <li className="jetbrains_400weight.className relative m-5 navbar-item">
-                                        <Link href="/">
-                                            <p className={jetbrains_400weight.className}>
-                                                Home
-                                            </p>
-                                        </Link>
-                                    </li>
-                                    <li className="relative m-5 navbar-item">
-                                        <Link href="/projects" >Projects</Link>
-                                    </li>
-                                </ul>
+                            <div className='flex flex-row m-5 relative'>
+                                <div className='flex flex-row justify-between'>
+                                    {links.map((link) => {
+                                        
+                                        return (
+                                            
+                                            <div className='flex p-5 flex-row' key={link.name}>
+                                                <Link
+                                                    key={link.name}
+                                                    href={link.href}
+                                                    className={clsx(jetbrains_800weight.className + " " + "rounded-2xl", {
+                                                        'bg-gray-500 animate-rainbowText-fast': pathname === link.href,
+                                                    })}>
+                                                    <p className="relative bottom-9 hidden md:block">{link.name}</p>
+                                                </Link>
+                                            </div>
+
+                                            
+                                        );
+                                    })}
+                                </div>
+                                
                             </div>
                         </div>
                     </div>

@@ -31,6 +31,7 @@ export default {
       },
       animation: {
         'rainbowText': 'rainbowText 7s linear infinite',
+        'rainbowText-fast': 'rainbowText 4s linear infinite',
       },
       colors: {
         background: "var(--background)",
