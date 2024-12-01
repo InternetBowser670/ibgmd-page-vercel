@@ -28,7 +28,7 @@ export default function Page() {
               </div>
               <div className="">
                 <div>
-                  <h1 className={"text-3xl truncate  text-ellipsis text-slate-600" + " " + jetbrains_400weight.className}>
+                  <h1 className={"text-3xl truncate  text-ellipsis text-slate-400" + " " + jetbrains_400weight.className}>
                     ibgmd/
                   </h1>
                 </div>  
