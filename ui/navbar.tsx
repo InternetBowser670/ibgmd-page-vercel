@@ -50,8 +50,8 @@ export default function Navbar() {
                                         <Link
                                             key={link.name}
                                             href={link.href}
-                                            className={clsx(jetbrains_800weight.className + " " + "p-1 rounded-2xl", {
-                                                'border-2 border-white opacity-90 text-black animate-rainbowText-fast': pathname === link.href,
+                                            className={clsx(jetbrains_800weight.className + " " + "p-1 relative rounded-2xl", {
+                                                'opacity-90 text-black animate-rainbowText-fast': pathname === link.href,
                                             })}>
                                             <p>{link.name}</p>
                                         </Link>
