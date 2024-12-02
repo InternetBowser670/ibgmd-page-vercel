@@ -32,14 +32,15 @@ export default function Navbar() {
         <>
             <div className='hidden sm:flex w-full justify-center m-5 overflow-hidden'>
                 <div className='justify-center border-solid rounded-2xl min-w-500 flex content-center h-9 m-5 p-5 border-red-500 border-2'>
-                    <div className='relative bottom-4 w-15 h-8'>
-                        <div className='inline-grid grid-cols-4 gap-3 grid-rows-1'>
+                    <div className='relative bottom-4 flex flex-row w-15 h-8'>
+                        <div className='flex justify-center'>
+                            <Link className='h-8 w-8 overflow-hidden' href="/">
+                                <Pfp size="2rem" />
+                            </Link>
+                        </div>
+                        <div className='inline-grid grid-cols-3 gap-3 grid-rows-1'>
 
-                            <div className='flex justify-center'>
-                                <Link className='h-8 w-8 overflow-hidden' href="/">
-                                    <Pfp size="2rem" />
-                                </Link>
-                            </div>
+                            
 
                             {links.map((link) => {
                                             
@@ -50,7 +51,7 @@ export default function Navbar() {
                                             key={link.name}
                                             href={link.href}
                                             className={clsx(jetbrains_800weight.className + " " + "p-1 rounded-2xl", {
-                                                'bg-gray-700 animate-rainbowText-fast': pathname === link.href,
+                                                'bg-white opacity-90 animate-rainbowText-fast': pathname === link.href,
                                             })}>
                                             <p>{link.name}</p>
                                         </Link>
