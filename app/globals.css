@@ -33,7 +33,7 @@ body {
   top: 50%;
   left: 50%;
   background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
-  z-index: -3;
+  z-index: -1;
   padding: 15px;
   animation: 3s spin linear infinite;
 }
