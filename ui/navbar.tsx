@@ -38,7 +38,7 @@ export default function Navbar() {
                                 <Pfp size="2rem" />
                             </Link>
                         </div>
-                        <div className='inline-grid grid-cols-3 gap-3 grid-rows-1'>
+                        <div className='flex flex-row justify-around px-3'>
 
                             
 
@@ -46,12 +46,12 @@ export default function Navbar() {
                                             
                                 return (
                                     
-                                    <div className='flex flex-row h-full w-30 justify-center' key={link.name}>
+                                    <div className='flex flex-row mx-3 h-full justify-center' key={link.name}>
                                         <Link
                                             key={link.name}
                                             href={link.href}
                                             className={clsx(jetbrains_800weight.className + " " + "p-1 relative rounded-2xl", {
-                                                'opacity-90 text-black animate-rainbowText-fast': pathname === link.href,
+                                                'text-black animate-rainbowText-fast': pathname === link.href,
                                             })}>
                                             <p>{link.name}</p>
                                         </Link>
