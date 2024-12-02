@@ -1,7 +1,16 @@
+import { JetBrains_Mono } from "next/font/google";
+
+const jetbrains_400weight = JetBrains_Mono({
+  weight: "400",
+  subsets: ["latin"],
+});
+
 export default function Page() {
   return (
     <div className="flex w-full  text-white h-full flex justify-center content-center">
-      0.2.3 - Brought back the borders on the homepage and started writing these messages in /version - 0.3.0 will have the full changelog but this is good for now
+      <p className={"text-slate-400 " + ' ' + jetbrains_400weight.className}>
+        0.2.4 - Fixed styling on these messages
+      </p>
     </div>
   );
 }
