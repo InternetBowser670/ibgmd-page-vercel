@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <div className="flex w-full  text-white h-full flex justify-center content-center">
       <p className={"text-slate-400 " + ' ' + jetbrains_400weight.className}>
-        0.2.4 - Fixed styling on these messages
+        0.2.5 - Added link to this page
       </p>
     </div>
   );
