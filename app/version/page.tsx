@@ -7,7 +7,9 @@ const jetbrains_400weight = JetBrains_Mono({
 });
 
 export default function Page() {
-  return(<div className="flex w-full text-white h-full flex justify-center content-center">
-    <VersionName />
-  </div>);
+  return (
+    <div className="flex w-full jetbrains_400weight.classname text-white h-full flex justify-center content-center">
+      <VersionName />
+    </div>
+  );
 }
