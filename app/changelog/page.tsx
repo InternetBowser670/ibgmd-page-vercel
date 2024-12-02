@@ -25,7 +25,7 @@ export default function Page() {
                         </h1>
                         <br />
                         <p className={"" + " " + jetbrains_400weight.className}>
-                            This feature is next on mytodo list, don&#39;t
+                            This feature is next on my todo list, don&#39;t
                             worry.
                         </p>
                     </div>
