@@ -17,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-adsense-account" content="ca-pub-7456236988733866" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <meta property="og:image" content="<generated>" />
         <meta property="og:image:type" content="<generated>" />
         <meta property="og:image:width" content="<generated>" />
