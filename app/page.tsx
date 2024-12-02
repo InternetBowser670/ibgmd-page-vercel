@@ -19,7 +19,7 @@ export default function Page() {
       <main>
         <div className="flex flex-wrap gap-4 p-5">
           <div className="max-w-450 flex-1">
-            <div className="flex justify-center content-around overflow-hidden border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
+            <div className="flex relative justify-center content-around rainbowBorderAddtl bg-black rounded-3xl p-5 m-5">
               <div className="flex justify-center content-center">
                 <div className="flex content-center">
                   <div className="relative top-1/4">
@@ -59,7 +59,7 @@ export default function Page() {
             <div className={"flex justify-center"  + " " + jetbrains_800weight.className}>
               <Link className="flex" href="/projects">click ​<p style={{ textDecoration: 'underline' }}> here </p>​ to see my projects</Link>
             </div>
-            
+
             <br />
             <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
               <p className={"text-5xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>

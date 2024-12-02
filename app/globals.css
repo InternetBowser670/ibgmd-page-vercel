@@ -22,3 +22,43 @@ body {
 .maxWidth200 {
     max-width: 200px;
 }
+
+.rainbowBorderAddtl::before, .rainbowBorderAddtl::after {
+  border-radius: 1rem;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  translate: -50% -50%;
+  top: 50%;
+  left: 50%;
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+  z-index: -3;
+  padding: 15px;
+  animation: 3s spin linear infinite;
+}
+.rainbowBorderAddtl::before {
+  padding: 50px;
+  z-index: -1;
+  width: 101.5%;
+  height: 105%;
+  border-radius: 25px;
+}
+
+.rainbowBorderAddtl::after {
+  filter: blur(1.5rem);
+}
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
