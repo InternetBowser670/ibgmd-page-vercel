@@ -61,7 +61,7 @@ export default function Page() {
             </div>
 
             <br />
-            <div className="border-solid border-5 border-red-600 rounded-3xl p-5 m-5">
+            <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
               <p className={"text-5xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
                           THIS WEBSITE IS STILL IN THE EARLY DEVELOPEMENT PHASE - DO NOT WORRY ABOUT MY PROGRAMMING SKILLS
               </p>
@@ -72,7 +72,7 @@ export default function Page() {
 
 
           <div className="max-w-450  content-center flex-1">
-            <div className="border-solid border-5 border-red-600 rounded-3xl p-5 m-5">
+            <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
                 <p className={"text-4xl text-blue-500 animate-rainbowText" + " " + jetbrains_800weight.className}>
                           Website is currently being updated ~daily, hope to have a reasonable beta version by 12/7/24.
                 </p>
