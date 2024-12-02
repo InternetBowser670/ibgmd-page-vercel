@@ -2,12 +2,12 @@ import Navbar from "@/ui/navbar";
 import type { Metadata } from "next";
 import "./globals.css";
 import VersionName from "@/ui/version-name";
-import { JetBrains_Mono } from "next/font/google";
+/*import { JetBrains_Mono } from "next/font/google";
 
 const jetbrains_400weight = JetBrains_Mono({
   weight: "400",
   subsets: ["latin"],
-});
+}); */
 
 export const metadata: Metadata = {
   title: "InternetBowser",
@@ -48,13 +48,6 @@ export default function RootLayout({
             <br />
             <br />
             <footer className="absolute bottom-0 flex width-full rounded-xl flex-row justify-between content-center">
-              <p
-                className={
-                  "text-slate-400" + " " + jetbrains_400weight.className
-                }
-              >
-                Made by InternetBowser - ​
-              </p>
               <VersionName />
             </footer>
           </div>

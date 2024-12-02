@@ -12,19 +12,19 @@ export default {
       keyframes: {
         rainbowText: {
           '0%': {
-            color: '#6666ff'
+            color: '#ff4545'
           },
           '10%': {
-            color: '#0099ff'
+            color: '#00ff99'
           },
           '50%': {
-            color: '#00ff00'
+            color: '#006aff'
           },
           '75%': {
-            color: '#ff3399'
+            color: '#ff0095'
           },
           '100%': {
-            color: '#6666ff'
+            color: '#ff4545'
           }
         
         }
