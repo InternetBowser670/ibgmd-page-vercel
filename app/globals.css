@@ -37,6 +37,11 @@ body {
   padding: 15px;
   animation: 3s spin linear infinite;
 }
+
+.insetBlackBorder {
+  box-shadow: inset 0px 0px 0px 10px #000000;
+}
+
 .rainbowBorderAddtl::before {
   padding: 50px;
   z-index: -1;

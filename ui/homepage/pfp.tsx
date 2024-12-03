@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Pfp({ size = "1em" }) {
     return (
         <div
-      className="rounded-full overflow-hidden flex items-center justify-center"
+      className="rounded-full overflow-hidden border-[3px] margin-2 bg-white border-red-600 border-solid flex items-center justify-center"
       style={{
         width: size,
         height: size,
