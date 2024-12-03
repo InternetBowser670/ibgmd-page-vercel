@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full">
       <head>
         <meta name="google-adsense-account" content="ca-pub-7456236988733866" />
         <meta
@@ -38,16 +38,14 @@ export default function RootLayout({
           crossOrigin="anonymous"
         ></script>
       </head>
-      <body className="relative m-5 antialiased">
+      <body className="m-5 h-full antialiased flex flex-col">
         <Navbar />
-        <div className="flex flex-col justify-between">
-          {children}
-          <div className="flex flex-col justify-between">
-            <br />
-            <br />
-            <br />
-            <br />
-            <footer className="absolute bottom-0 flex width-full rounded-xl flex-row justify-between content-center">
+        <div className="flex-grow flex flex-col">
+          <div className="flex-grow">
+            {children}
+          </div>
+          <div className="flex-grow-0 flex items-center justify-center">
+            <footer className="relative bottom-0 w-full rounded-xl flex flex-row justify-between items-center">
               <VersionName />
             </footer>
           </div>

@@ -44,6 +44,10 @@ body {
   height: 105%;
   border-radius: 25px;
 }
+.blurBg {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
+}
 
 .rainbowBorderAddtl::after {
   filter: blur(1.5rem);
