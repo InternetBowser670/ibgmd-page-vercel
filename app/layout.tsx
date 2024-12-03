@@ -40,6 +40,7 @@ export default function RootLayout({
       </head>
       <body className="m-5 h-full antialiased flex flex-col">
         <Navbar />
+        <br />
         <div className="flex-grow flex flex-col">
           <div className="flex-grow">
             {children}

@@ -1,5 +1,5 @@
 import { JetBrains_Mono } from "next/font/google";
-import Link from "next/link"
+import ChangelogElements from "@/ui/changelog/changelog-elements";
 
 const jetbrains_400weight = JetBrains_Mono({
     weight: "400",
@@ -15,21 +15,27 @@ export default function Page() {
     return (
         <>
             <main>
-                <div className="flex justify-center items-center">
-                    <div>
-                        <h1
-                            className={
-                                "text-3xl" + " " + jetbrains_800weight.className
-                            }
-                        >
-                            This page is under construction
-                        </h1>
-                        <br />
-                        <p className={"" + " " + jetbrains_400weight.className}>
-                            This feature is next on my todo list, don&#39;t
-                            worry, but for now go to <Link className="underline" href={"/version"}>/version</Link> to see the most recent updates.
-                        </p>
+                <br />
+                <div className="flex flex-col content-center justify-center">
+                    <div className="flex justify-center items-center">
+                        <div>
+                            <h1
+                                className={
+                                    "text-3xl" + " " + jetbrains_800weight.className
+                                }
+                            >
+                                Changelog
+                            </h1>
+                            <br />
+                            <p className={"" + " " + jetbrains_400weight.className}>
+                                See updates to this website
+                            </p>
+                        </div>
                     </div>
+                    <br />
+                    <ChangelogElements />
+                    <br />
+                    <br />
                 </div>
             </main>
         </>
