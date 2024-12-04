@@ -10,13 +10,18 @@ const jetbrains_800weight = JetBrains_Mono({
   subsets: ["latin"],
 });
 
-export default function ChangelogEl(props: any) {
-  var vername = props.vername || "0.2.8";
-  var changes = props.changes || "Finalized version indicator position";
+interface ChangelogProps {
+  vername: string;
+  changes: string;
+}
+
+export default function ChangelogEl(props: ChangelogProps) {
+  const vername = props.vername || "0.2.8";
+  const changes = props.changes || "Finalized version indicator position";
 
   return (
     <>
-      <div className="w-[30%] justify-self-center self-center border-2 p-3 rounded-2xl flex flex-col justify-center content-center border-red-600 border-solid m-2">
+      <div className="w-[340px] justify-self-center self-center border-2 p-3 rounded-2xl flex flex-col justify-center content-center border-red-600 border-solid m-2">
         <div className="flex justify-center">
           <div>
             <h1 className={"text-2xl" + " " + jetbrains_800weight.className}>
