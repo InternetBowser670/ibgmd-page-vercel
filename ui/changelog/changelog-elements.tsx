@@ -4,6 +4,7 @@ export default function ChangelogElements() {
   return(
     <>
       <div className='p-2'>
+        <ChangelogEl vername="0.4.1" date="12/4/24" changes="Added another sign in button, improved auth functionality" />
         <ChangelogEl vername="0.4" date="12/4/24" changes="Added an auth system - current sign in options: email, Google" />
         <ChangelogEl vername="0.3.5" date="12/4/24" changes="Improved the changelog by sizing the elements by vw rather than vh" />
         <ChangelogEl vername="0.3.4" date="12/4/24" changes="Improved compatibility by making certain text have more contrast with its background" />

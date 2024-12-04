@@ -2,6 +2,7 @@ import Navbar from "@/ui/navbar";
 import type { Metadata } from "next";
 import "./globals.css";
 import VersionName from "@/ui/version-name";
+import { ClerkProvider } from "@clerk/nextjs";
 /*import { JetBrains_Mono } from "next/font/google";
 
 const jetbrains_400weight = JetBrains_Mono({
@@ -39,6 +40,7 @@ export default function RootLayout({
         ></script>
       </head>
       <body className="m-5 h-full antialiased flex flex-col">
+        <ClerkProvider>
         <Navbar />
         <br />
         <div className="flex-grow flex flex-col">
@@ -51,6 +53,7 @@ export default function RootLayout({
             </footer>
           </div>
         </div>
+        </ClerkProvider>
       </body>
     </html>
   );

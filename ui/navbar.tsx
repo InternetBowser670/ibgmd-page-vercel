@@ -1,6 +1,6 @@
 "use client";
 
-import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 
 
 import React from "react";
@@ -30,7 +30,7 @@ export default function Navbar() {
 
     return (
         <>
-            <ClerkProvider>
+            
                 <div className={jetbrains_800weight.className +
                         " " + "flex sm:flex w-full justify-center m-5 overflow-hidden"}>
                     <div className="bg-black fixed z-10 justify-center border-solid rounded-2xl min-w-500 flex content-center h-9 m-5 p-5 border-red-500 border-2">
@@ -81,7 +81,6 @@ export default function Navbar() {
                     <br />
                     <br />
                 </div>
-            </ClerkProvider>
         </>
     );
 }
