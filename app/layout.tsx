@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import VersionName from "@/ui/version-name";
 import { ClerkProvider } from "@clerk/nextjs";
+import { dark } from '@clerk/themes'
 /*import { JetBrains_Mono } from "next/font/google";
 
 const jetbrains_400weight = JetBrains_Mono({
@@ -40,7 +41,10 @@ export default function RootLayout({
         ></script>
       </head>
       <body className="m-5 h-full antialiased flex flex-col">
-        <ClerkProvider>
+        <ClerkProvider appearance={{
+            baseTheme: dark,
+          }}
+>
         <Navbar />
         <br />
         <div className="flex-grow flex flex-col">

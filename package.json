@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^6.6.0",
+    "@clerk/themes": "^2.1.50",
     "@heroicons/react": "^2.2.0",
     "@vercel/og": "^0.6.4",
     "bootstrap": "^5.3.3",
