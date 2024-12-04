@@ -4,6 +4,7 @@ export default function ChangelogElements() {
   return(
     <>
       <div className='p-2'>
+        <ChangelogEl vername="0.3.2" changes="Made the changelog more consistant by sizing the change divs to a set width" />
         <ChangelogEl vername="0.3.1" changes="Made the changelog more visible with a <br />" />
         <ChangelogEl vername="0.3.0" changes="Vastly improved changelog, making /version obsolete" />
         <ChangelogEl vername="0.2.8" changes="Finalized version indicator position by offsetting it upwards" />
