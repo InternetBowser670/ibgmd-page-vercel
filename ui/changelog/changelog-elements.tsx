@@ -4,6 +4,7 @@ export default function ChangelogElements() {
   return(
     <>
       <div className='p-2'>
+        <ChangelogEl vername="0.3.5" date="12/4/24" changes="Improved the changelog by sizing the elements by vw rather than vh" />
         <ChangelogEl vername="0.3.4" date="12/4/24" changes="Improved compatibility by making certain text have more contrast with its background" />
         <ChangelogEl vername="0.3.3" date="12/4/24" changes="Added dates to and styled the changelog" />
         <ChangelogEl vername="0.3.2" date="12/3/24" changes="Made the changelog more consistant by sizing the change divs to a set width" />

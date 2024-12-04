@@ -29,7 +29,7 @@ export default function ChangelogEl(props: ChangelogProps) {
 
   return (
     <>
-      <div className="w-[40vh] justify-self-center self-center border-2 p-3 rounded-2xl flex flex-col justify-center content-center border-red-600 border-solid m-2">
+      <div className="w-[40vw] justify-self-center self-center border-2 p-3 rounded-2xl flex flex-col justify-center content-center border-red-600 border-solid m-2">
         <div className="flex flex-col justify-center">
           <div className="flex flex-row">
             <h1 className={"text-2xl" + " " + jetbrains_800weight.className}>
