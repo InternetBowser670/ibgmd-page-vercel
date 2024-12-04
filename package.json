@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.6.0",
     "@heroicons/react": "^2.2.0",
     "@vercel/og": "^0.6.4",
     "bootstrap": "^5.3.3",
