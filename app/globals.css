@@ -71,3 +71,7 @@ body {
   initial-value: 0deg;
   inherits: false;
 }
+
+.cl-rootBox {
+  background-color: slategray;
+}

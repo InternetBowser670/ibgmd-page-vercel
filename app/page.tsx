@@ -76,7 +76,7 @@ export default function Page() {
               }
             >
               <Link className="flex" href="/projects">
-                click ​<p style={{ textDecoration: "underline" }}> here </p>​ to
+                click ​<p className="underline"> here </p>​ to
                 see my projects
               </Link>
             </div>
@@ -123,7 +123,7 @@ export default function Page() {
                     jetbrains_800weight.className}>
                   <UserButton />
                   <div className='flex justify-center ml-3 pl-3 border-l-2 border-solid border-slate-400'>
-                  <SignOutButton />
+                    <SignOutButton />
                   </div>
                 </div>
               </SignedIn>

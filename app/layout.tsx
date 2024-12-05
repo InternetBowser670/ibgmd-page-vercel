@@ -43,6 +43,12 @@ export default function RootLayout({
       <body className="m-5 h-full antialiased flex flex-col">
         <ClerkProvider appearance={{
             baseTheme: dark,
+            elements: {
+              rootBox: 'bg-slate-500 text-white',
+            },
+            variables: {
+              
+            },    
           }}
 >
         <Navbar />
