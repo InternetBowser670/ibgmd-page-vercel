@@ -4,6 +4,8 @@ export default function ChangelogElements() {
   return(
     <>
       <div className='p-2'>
+        <ChangelogEl vername="0.4.4" date="12/4/24" changes="Fixed a major css issue" />
+        <ChangelogEl vername="0.4.3" date="12/4/24" changes="Working on log in styles, fixed a small issue with the navbar" />
         <ChangelogEl vername="0.4.2" date="12/4/24" changes="Changed auth to dark mode" />
         <ChangelogEl vername="0.4.1" date="12/4/24" changes="Added another sign in button, improved auth functionality" />
         <ChangelogEl vername="0.4" date="12/4/24" changes="Added an auth system - current sign in options: email, Google" />

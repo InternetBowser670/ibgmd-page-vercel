@@ -44,7 +44,7 @@ export default function RootLayout({
         <ClerkProvider appearance={{
             baseTheme: dark,
             elements: {
-              rootBox: 'bg-slate-500 text-white',
+              signIn: 'bg-slate-500 text-white',
             },
             variables: {
               
