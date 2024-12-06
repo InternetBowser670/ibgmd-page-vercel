@@ -4,6 +4,7 @@ export default function ChangelogElements() {
   return(
     <>
       <div className='p-2'>
+        <ChangelogEl vername="0.4.8" date="12/5/24" changes="Working on webhooks again" />
         <ChangelogEl vername="0.4.7" date="12/5/24" changes="Working on webhooks" />
         <ChangelogEl vername="0.4.6" date="12/5/24" changes="Emergency patch for auth" />
         <ChangelogEl vername="0.4.5" date="12/4/24" changes="Working on firebase auth for future projects" />
