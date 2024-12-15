@@ -90,8 +90,12 @@ export default function Page() {
                   jetbrains_800weight.className
                 }
               >
-                THIS WEBSITE IS STILL IN THE EARLY DEVELOPEMENT PHASE - DO NOT
-                WORRY ABOUT MY PROGRAMMING SKILLS
+                DONATE TO ME: 
+                <br />
+                <br />
+                <a className="mt-2 underline" href="https://pay.internetbowser.com">
+                  https://pay.internetbowser.com
+                </a>
               </p>
             </div>
           </div>
@@ -100,14 +104,31 @@ export default function Page() {
             <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
               <p
                 className={
-                  "text-4xl text-blue-500 animate-rainbowText text-ellipsis" +
+                  "text-5xl text-blue-500 text-ellipsis" +
                   " " +
                   jetbrains_800weight.className
                 }
               >
-                Website is currently being updated ~daily, hope to have a
-                reasonable beta version by 12/7/24.
+                Next features:
+                <br />
+                <br />
+                
               </p>
+              <ul className={
+                  "text-3xl text-blue-500 text-ellipsis" +
+                  " " +
+                  jetbrains_800weight.className
+                }>
+                  <li>
+                    Fixing Firebase issues (1.0)
+                  </li>
+                  <li>
+                    &quot;Contact me&quot; page (1.1)
+                  </li>
+                  <li>
+                    Adding first project (2.0)
+                  </li>
+                </ul>
             </div>
             <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
               <SignedOut>

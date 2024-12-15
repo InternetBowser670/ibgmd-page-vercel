@@ -75,3 +75,7 @@ body {
 .cl-signIn-root {
   background-color: slategray;
 }
+
+ul li::before {
+    content: '• ';
+}

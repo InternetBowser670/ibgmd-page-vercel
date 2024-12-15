@@ -4,6 +4,7 @@ export default function ChangelogElements() {
   return(
     <>
       <div className='p-2'>
+        <ChangelogEl vername="0.5.0" date="12/15/24" changes="Made major changes to the homapage, almost  done with Firebase auth, and then after that I will be able to work on a project" />
         <ChangelogEl vername="0.4.8" date="12/5/24" changes="Working on webhooks again" />
         <ChangelogEl vername="0.4.7" date="12/5/24" changes="Working on webhooks" />
         <ChangelogEl vername="0.4.6" date="12/5/24" changes="Emergency patch for auth" />
@@ -12,7 +13,7 @@ export default function ChangelogElements() {
         <ChangelogEl vername="0.4.3" date="12/4/24" changes="Working on log in styles, fixed a small issue with the navbar" />
         <ChangelogEl vername="0.4.2" date="12/4/24" changes="Changed auth to dark mode" />
         <ChangelogEl vername="0.4.1" date="12/4/24" changes="Added another sign in button, improved auth functionality" />
-        <ChangelogEl vername="0.4" date="12/4/24" changes="Added an auth system - current sign in options: email, Google" />
+        <ChangelogEl vername="0.4.0" date="12/4/24" changes="Added an auth system - current sign in options: email, Google" />
         <ChangelogEl vername="0.3.5" date="12/4/24" changes="Improved the changelog by sizing the elements by vw rather than vh" />
         <ChangelogEl vername="0.3.4" date="12/4/24" changes="Improved compatibility by making certain text have more contrast with its background" />
         <ChangelogEl vername="0.3.3" date="12/4/24" changes="Added dates to and styled the changelog" />
