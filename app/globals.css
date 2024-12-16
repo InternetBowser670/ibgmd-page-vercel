@@ -79,3 +79,25 @@ body {
 ul li::before {
     content: '• ';
 }
+
+@keyframes rainbowText {
+  0% {
+    background-color: '#ff4545'
+  }
+  10% {
+    background-color: '#00ff99'
+  }
+  50% {
+   background-color: '#006aff'
+  }
+  75% {
+    background-color: '#ff0095'
+  }
+  100% {
+    background-color: '#ff4545'
+  }
+}
+
+ul li.noBulletPoint::before {
+  content: '​​​​​ ​ ​ ​ ​ ​ ​ ​';
+}

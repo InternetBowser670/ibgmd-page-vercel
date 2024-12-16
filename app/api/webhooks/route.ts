@@ -1,23 +1,29 @@
 import { Webhook } from 'svix'
 import { headers } from 'next/headers'
-import { UserJSON, WebhookEvent } from '@clerk/nextjs/server'
-import { initializeApp, getApps } from "firebase/app";
-import { getFirestore, doc, setDoc, Timestamp } from "firebase/firestore";
+import {  WebhookEvent } from '@clerk/nextjs/server'
 
-const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.FIREBASE_APP_ID,
-};
+import { MongoClient, ServerApiVersion } from 'mongodb'
+const uri = process.env.MONGODB_URI || "lol ggs";
 
-if (!getApps().length) {
-  initializeApp(firebaseConfig);
-}
+// Create a MongoClient with a MongoClientOptions object to set the Stable API version
+const client = new MongoClient(uri, {
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  }
+});
 
-const db = getFirestore();
+
+
+
+await client.connect(); 
+
+const db = client.db(process.env.MONGODB_DB_NAME)
+const users = db.collection("users")
+
+
+
 
 
 export async function POST(req: Request) {
@@ -72,22 +78,10 @@ export async function POST(req: Request) {
 
   try {
     if (eventType === "user.created" || eventType === "user.updated") {
-      const userRef = doc(db, "users", id); // Use the Clerk user ID as the Firestore document ID
-      function sanitizeData(data: UserJSON) {
-        return JSON.parse(JSON.stringify(data, (key, value) => {
-          if (typeof value === "undefined" || Number.isNaN(value)) return null;
-          if (typeof value === "string" && value.trim() === "") return null; // Replace empty strings
-          if (key.endsWith("_at") && typeof value === "number") {
-            return Timestamp.fromMillis(value); // Convert timestamps
-          }
-          return value;
-        }));
-      }
-    
-      const sanitizedData = sanitizeData(evt.data);
-      console.log(sanitizedData)
-      setDoc(userRef, sanitizedData, { merge: true });
-      console.log(`User ${id} successfully updated in Firebase.`);
+      const result = await users.insertOne(evt.data);
+      console.log(
+          `A document was inserted with the _id: ${result.insertedId}`,
+      );
     }
   } catch (error) {
     console.error("Error updating Firebase:", error);

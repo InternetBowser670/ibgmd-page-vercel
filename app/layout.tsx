@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
+    <html lang="en" data-theme="n/a" className="h-full">
       <head>
         <meta name="google-adsense-account" content="ca-pub-7456236988733866" />
         <meta

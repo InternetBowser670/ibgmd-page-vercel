@@ -1,6 +1,34 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  daisyui: {
+    themes: [
+      {
+        
+          InternetBowser: {
+            
+            "primary": "#dc2626",
+                      
+            "secondary": "#3b82f6",
+                      
+            "accent": "#00ffff",
+                      
+            "neutral": "#111827",
+                      
+            "base-100": "#000000",
+                      
+            "info": "#0000ff",
+                      
+            "success": "#00ff00",
+                      
+            "warning": "#00ff00",
+                      
+            "error": "#ff0000",
+          },
+        
+      },
+    ], 
+  },
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -59,5 +87,6 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 } satisfies Config;

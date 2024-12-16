@@ -93,10 +93,16 @@ export default function Page() {
                 DONATE TO ME: 
                 <br />
                 <br />
-                <a className="mt-2 underline" href="https://pay.internetbowser.com">
-                  https://pay.internetbowser.com
-                </a>
               </p>
+              <ul>
+                <li className="noBulletPoint">
+                  <a className={"mt-2 text-3xl text-blue-500 animate-rainbowText text-ellipsis underline" +
+                  " " +
+                  jetbrains_800weight.className} href="https://pay.internetbowser.com">
+                    https://pay.internetbowser.com
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
 
