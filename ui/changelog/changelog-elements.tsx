@@ -4,7 +4,7 @@ export default function ChangelogElements() {
   return(
     <>
       <div className='p-2'>
-        <ChangelogEl vername="0.5.2" date="12/16/24" changes="Finalized DB setup using MongoDB and Clerk Auth - All Accounts will need to be created again" />
+        <ChangelogEl vername="0.5.2" date="12/16/24" changes="Finalized DB setup using MongoDB and Clerk Auth - All accounts will need to be created again" />
         <ChangelogEl vername="0.5.1" date="12/16/24" changes="Ditched Firebase for Mongo, restyled homepage slightly, working on analytics page" />
         <ChangelogEl vername="0.5.0" date="12/15/24" changes="Made major changes to the homapage, almost  done with Firebase auth, and then after that I will be able to work on a project" />
         <ChangelogEl vername="0.4.8" date="12/5/24" changes="Working on webhooks again" />
