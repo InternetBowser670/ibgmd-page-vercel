@@ -72,16 +72,26 @@ export async function POST(req: Request) {
 
   // Do something with payload
   // For this guide, log payload to console
-  const { id } = evt.data as { id: string };
   const eventType = evt.type
-  console.log(`Received webhook with ID ${id} and event type of ${eventType}`)
-  console.log('Webhook payload:', body)
+  console.log(`Received webhook with event type of ${eventType}`)
 
   try {
-    if (eventType === "user.created" || eventType === "user.updated") {
+    if (eventType === "user.created") {
       const result = await users.insertOne(evt.data);
       console.log(
           `A document was inserted with the _id: ${result.insertedId}`,
+      );
+    } else if (eventType === "user.deleted") {
+      const deleteResult = await users.deleteOne({ id: evt.data.id });
+      console.log(
+        `A document was deleted ${deleteResult.deletedCount} times`,
+      );
+    } else if (eventType === "user.updated") {
+      const userData = evt.data
+      const updateResult = await users.updateOne( { id: evt.data.id },
+        { $set: userData });
+      console.log(
+        `A document was updated ${updateResult.modifiedCount} times`,
       );
     }
   } catch (error) {

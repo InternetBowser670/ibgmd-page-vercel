@@ -115,26 +115,18 @@ export default function Page() {
                   jetbrains_800weight.className
                 }
               >
-                Next features:
+                WARNING:
                 <br />
                 <br />
                 
               </p>
-              <ul className={
+              <p className={
                   "text-3xl text-blue-500 text-ellipsis" +
                   " " +
                   jetbrains_800weight.className
                 }>
-                  <li>
-                    Fixing Firebase issues (1.0)
-                  </li>
-                  <li>
-                    &quot;Contact me&quot; page (1.1)
-                  </li>
-                  <li>
-                    Adding first project (2.0)
-                  </li>
-                </ul>
+                  It is possible that certain user account features may not be vidible because of certain restrictions on your network. To create, edit or delete an account, you may need to connect to a different WiFi network. 
+              </p>
             </div>
             <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
               <SignedOut>
