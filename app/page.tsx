@@ -4,7 +4,7 @@ import { MapPinIcon } from "@heroicons/react/24/solid";
 import Pfp from "@/ui/homepage/pfp";
 import { SignInButton, SignOutButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import { TypescriptOriginal, NextjsOriginal, ReactOriginal, MongodbOriginal, VscodeOriginal } from 'devicons-react';
-import { LatestChangeElement } from "@/ui/changelog/changelog-elements";
+import { LatestChangeElement } from '../ui/changelog/changelog-elements'
 
 const jetbrains_400weight = JetBrains_Mono({
   weight: "400",

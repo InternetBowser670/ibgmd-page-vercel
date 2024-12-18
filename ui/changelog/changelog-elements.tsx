@@ -1,7 +1,12 @@
 import ChangelogEl from './changelog-element';
-import HomepageChangelogEl from '@/ui/changelog/changelog-element'
+import HomepageChangelogEl from './homepage-changelog-element'
 
 const versions = {
+  "0.6.1": {
+    "date": "12/17/24",
+    "changes": "Made the changelog element on the homepage have slightly different stylization than the ones on the /changelog page",
+    "type": "site"
+  },
   "0.6.0": {
     "date": "12/17/24",
     "changes": "Added a changelog element and some information about my programming experience to the homepage",
@@ -161,21 +166,6 @@ export function LatestChangeElement() {
   
 
 export default function ChangelogElements() {
-
-
-  Object.keys(versions).forEach((key) => {
-    const vername = key as keyof typeof versions;
-    const changes = versions[vername].changes;
-    const date = versions[vername].date;
-    const changeType = versions[vername].type;
-
-
-    return (
-      <ChangelogEl vername={vername} date={date} changes={changes} changeType={changeType} />
-    )
-  });
-
-
   return(
     <>
       <div className='p-2'>
