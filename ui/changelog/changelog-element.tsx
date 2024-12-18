@@ -1,4 +1,5 @@
 import { JetBrains_Mono } from "next/font/google";
+import { Version } from "@/src/lib/types";
 
 const jetbrains_400weight = JetBrains_Mono({
   weight: "400",
@@ -16,28 +17,35 @@ const jetbrains_600weight = JetBrains_Mono({
 });
 
 
-interface ChangelogProps {
-  vername: string;
-  changes: string;
-  date: string;
-}
-
-export default function ChangelogEl(props: ChangelogProps) {
+export default function ChangelogEl(props: Version) {
   const vername = props.vername || "0.2.8";
   const changes = props.changes || "Finalized version indicator position";
   const date = props.date || "12/4/24"
+  const changeType = props.changeType || "site"
 
   return (
     <>
       <div className="w-[40vw] justify-self-center self-center border-2 p-3 rounded-2xl flex flex-col justify-center content-center border-red-600 border-solid m-2">
         <div className="flex flex-col justify-center">
-          <div className="flex flex-row">
-            <h1 className={"text-2xl" + " " + jetbrains_800weight.className}>
-              {vername}
-            </h1>
-            <p className={"text-lg relative left-3 text-slate-400" + " " + jetbrains_600weight.className}>
-              {" " + "- " + date}
-            </p>
+          <div className="flex flex-row justify-between">
+            <div className="flex flex-row">
+              <h1 className={"text-2xl" + " " + jetbrains_800weight.className}>
+                {vername} 
+                {changeType === "site" ? (
+                     <span>
+                        ​ (Site Update)
+                     </span>
+                  ) : changeType === "convoes" ? (
+                    <span>
+                        ​ (Convoes Update)
+                     </span>
+                  ) : null
+                } 
+              </h1>
+              <p className={"text-lg relative left-3 text-slate-400" + " " + jetbrains_600weight.className}>
+                {" " + "- " + date}
+              </p>
+            </div>
           </div>
           <div>
             <br />
@@ -49,4 +57,47 @@ export default function ChangelogEl(props: ChangelogProps) {
       </div>
     </>
   );
+}
+
+export function HomepageChangelogEl(props: Version) {
+  const vername = props.vername || "0.2.8";
+  const changes = props.changes || "Finalized version indicator position";
+  const date = props.date || "12/4/24"
+  const changeType = props.changeType || "site"
+
+  return (
+    <>
+      <div className="justify-self-center w-[40vw] self-center border-2 p-3 rounded-2xl flex flex-col justify-center content-center border-blue-500 border-solid m-2">
+        <div className="flex flex-col justify-center">
+          <div className="flex flex-row justify-between">
+            <div className="flex flex-row">
+              <h1 className={"text-2xl" + " " + jetbrains_800weight.className}>
+                {vername} 
+                {changeType === "site" ? (
+                     <span>
+                        ​ (Site Update)
+                     </span>
+                  ) : changeType === "convoes" ? (
+                    <span>
+                        ​ (Convoes Update)
+                     </span>
+                  ) : null
+                } 
+              </h1>
+              <p className={"text-lg relative left-3 text-slate-400" + " " + jetbrains_600weight.className}>
+                {" " + "- " + date}
+              </p>
+            </div>
+          </div>
+          <div>
+            <br />
+            <p className={"text-lg" + " " + jetbrains_400weight.className}>
+              {changes}
+            </p>
+          </div>  
+        </div>
+      </div>
+    </>
+  );
+
 }

@@ -4,6 +4,8 @@ import "./globals.css";
 import VersionName from "@/ui/version-name";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from '@clerk/themes'
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 /*import { JetBrains_Mono } from "next/font/google";
 
 const jetbrains_400weight = JetBrains_Mono({
@@ -63,6 +65,8 @@ export default function RootLayout({
           </div>
         </div>
         </ClerkProvider>
+        <Analytics />
+        <SpeedInsights/>
       </body>
     </html>
   );

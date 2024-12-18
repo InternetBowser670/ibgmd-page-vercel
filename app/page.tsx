@@ -3,6 +3,8 @@ import { JetBrains_Mono } from "next/font/google";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import Pfp from "@/ui/homepage/pfp";
 import { SignInButton, SignOutButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+import { TypescriptOriginal, NextjsOriginal, ReactOriginal, MongodbOriginal, VscodeOriginal } from 'devicons-react';
+import { LatestChangeElement } from "@/ui/changelog/changelog-elements";
 
 const jetbrains_400weight = JetBrains_Mono({
   weight: "400",
@@ -19,7 +21,7 @@ export default function Page() {
     <>
       <main className="">
         <div className="flex flex-wrap gap-4 p-5">
-          <div className="max-w-450 flex-1">
+          <div className="max-w-450 justify-around content-around flex-1">
             <div className="flex relative justify-center content-around rainbowBorderAddtl bg-black rounded-3xl p-5 m-5">
               <div className="flex justify-center content-center">
                 <div className="flex content-center">
@@ -69,19 +71,58 @@ export default function Page() {
             <br />
             <br />
             <br />
-
-            <div
-              className={
-                "flex justify-center" + " " + jetbrains_800weight.className
-              }
-            >
-              <Link className="flex" href="/projects">
-                click ​<p className="underline"> here </p>​ to
-                see my projects
-              </Link>
+            <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
+              <div
+                className={
+                  "flex justify-center" + " " + jetbrains_800weight.className
+                }
+              >
+                <Link className="flex" href="/changelog">
+                  Click ​<p className="underline"> here </p>​ to
+                  see the most recent update to one of my projects
+                </Link>
+              </div>
+              <br />
+              <hr className="opacity-50" />
+              <br />
+              
+              <LatestChangeElement />
             </div>
+            
 
             <br />
+          </div>
+
+          <div className="max-w-450 justify-around content-center flex-1">
+            <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
+            <p className={
+                  "text-2xl text-blue-500 opacity-50 text-ellipsis" +
+                  " " +
+                  jetbrains_800weight.className
+                }>
+                  (unprofessional)
+              </p>
+              <p className={
+                  "text-3xl text-blue-500 text-ellipsis" +
+                  " " +
+                  jetbrains_800weight.className
+                }>
+                  Full stack developer && software engineer
+              </p>
+
+              <br />
+              <br />
+              <br />
+
+              <div className="flex justify-center flex-row">
+                <TypescriptOriginal className="rounded-2xl" size="100" />
+                <NextjsOriginal size="100" />
+                <ReactOriginal size="100" />
+                <MongodbOriginal size="100" />
+                <VscodeOriginal size={100} />
+              </div>
+              
+            </div>
             <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
               <p
                 className={
@@ -90,7 +131,7 @@ export default function Page() {
                   jetbrains_800weight.className
                 }
               >
-                DONATE TO ME: 
+                Donate to me:
                 <br />
                 <br />
               </p>
@@ -103,30 +144,6 @@ export default function Page() {
                   </a>
                 </li>
               </ul>
-            </div>
-          </div>
-
-          <div className="max-w-450  content-center flex-1">
-            <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
-              <p
-                className={
-                  "text-5xl text-blue-500 text-ellipsis" +
-                  " " +
-                  jetbrains_800weight.className
-                }
-              >
-                WARNING:
-                <br />
-                <br />
-                
-              </p>
-              <p className={
-                  "text-3xl text-blue-500 text-ellipsis" +
-                  " " +
-                  jetbrains_800weight.className
-                }>
-                  It is possible that certain user account features may not be vidible because of certain restrictions on your network. To create, edit or delete an account, you may need to connect to a different WiFi network. 
-              </p>
             </div>
             <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
               <SignedOut>
