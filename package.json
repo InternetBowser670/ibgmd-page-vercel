@@ -12,6 +12,9 @@
     "@clerk/nextjs": "^6.6.0",
     "@clerk/themes": "^2.1.50",
     "@heroicons/react": "^2.2.0",
+    "@tsparticles/engine": "^3.7.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.7.1",
     "@vercel/analytics": "^1.4.1",
     "@vercel/og": "^0.6.4",
     "@vercel/speed-insights": "^1.1.0",
@@ -23,9 +26,12 @@
     "heroicons": "^2.2.0",
     "mongodb": "^6.12.0",
     "next": "15.0.3",
-    "react": "19.0.0-rc-66855b96-20241106",
+    "react": "^19.0.0",
     "react-dom": "19.0.0-rc-66855b96-20241106",
-    "svix": "^1.42.0"
+    "react-particle-animation": "^2.0.2",
+    "react-tsparticles": "^2.12.2",
+    "svix": "^1.42.0",
+    "tsparticles": "^3.7.1"
   },
   "devDependencies": {
     "@types/node": "^20",

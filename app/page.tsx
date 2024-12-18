@@ -20,7 +20,7 @@ export default function Page() {
   return (
     <>
       <main className="">
-        <div className="flex flex-wrap gap-4 p-5">
+        <div className="flex flex-wrap gap-3 p-5">
           <div className="max-w-450 justify-around content-around flex-1">
             <div className="flex relative justify-center content-around rainbowBorderAddtl bg-black rounded-3xl p-5 m-5">
               <div className="flex justify-center content-center">
@@ -71,7 +71,7 @@ export default function Page() {
             <br />
             <br />
             <br />
-            <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
+            <div className="bg-black border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
               <div
                 className={
                   "flex justify-center" + " " + jetbrains_800weight.className
@@ -94,7 +94,7 @@ export default function Page() {
           </div>
 
           <div className="max-w-450 justify-around content-center flex-1">
-            <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
+            <div className="border-solid border-2 bg-black border-red-600 rounded-3xl p-5 m-5">
             <p className={
                   "text-2xl text-blue-500 opacity-50 text-ellipsis" +
                   " " +
@@ -127,29 +127,7 @@ export default function Page() {
               </div>
               
             </div>
-            <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
-              <p
-                className={
-                  "text-5xl text-blue-500 animate-rainbowText text-ellipsis" +
-                  " " +
-                  jetbrains_800weight.className
-                }
-              >
-                Donate to me:
-                <br />
-                <br />
-              </p>
-              <ul>
-                <li className="noBulletPoint">
-                  <a className={"mt-2 text-3xl text-blue-500 animate-rainbowText text-ellipsis underline" +
-                  " " +
-                  jetbrains_800weight.className} href="https://pay.internetbowser.com">
-                    https://pay.internetbowser.com
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
+            <div className="border-solid border-2 bg-black border-red-600 rounded-3xl p-5 m-5">
               <SignedOut>
                 <div className={"text-4xl flex justify-center text-blue-500 animate-rainbowText text-ellipsis" +
                     " " +

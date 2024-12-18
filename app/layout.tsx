@@ -67,6 +67,30 @@ export default function RootLayout({
         </ClerkProvider>
         <Analytics />
         <SpeedInsights/>
+        <div className="mainBackground">
+          <div id='bgLine-1' className="bg-line">
+
+          </div>
+          <div id='bgLine-2' className="bg-line">
+
+          </div>
+          <div id='bgLine-3' className="bg-line">
+
+          </div>
+          <div id='bgLine-4' className="bg-line">
+
+          </div>
+          <div id='bgLine-5' className="bg-line">
+
+          </div>
+          <div id='bgLine-6' className="bg-line">
+
+          </div>
+          <div id='bgLine-7' className="bg-line">
+
+          </div>
+
+        </div>
       </body>
     </html>
   );

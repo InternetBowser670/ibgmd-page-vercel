@@ -24,6 +24,7 @@ export default function Navbar() {
             href: "/projects",
         },
         { name: "Changelog", href: "/changelog" },
+        { name: "Donate", href: "https://pay.internetbowser.com" }
     ];
 
     const pathname = usePathname();

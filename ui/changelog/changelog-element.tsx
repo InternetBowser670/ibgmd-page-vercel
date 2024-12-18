@@ -25,7 +25,7 @@ export default function ChangelogEl(props: Version) {
 
   return (
     <>
-      <div className="w-[40vw] justify-self-center self-center border-2 p-3 rounded-2xl flex flex-col justify-center content-center border-red-600 border-solid m-2">
+      <div className="w-[40vw] bg-black justify-self-center self-center border-2 p-3 rounded-2xl flex flex-col justify-center content-center border-red-600 border-solid m-2">
         <div className="flex flex-col justify-center">
           <div className="flex flex-row justify-between">
             <div className="flex flex-row">
