@@ -3,7 +3,7 @@ import { JetBrains_Mono } from "next/font/google";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import Pfp from "@/ui/homepage/pfp";
 import { SignInButton, SignOutButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
-import { TypescriptOriginal, NextjsOriginal, ReactOriginal, MongodbOriginal, VscodeOriginal } from 'devicons-react';
+import { TypescriptOriginal, NextjsOriginal, ReactOriginal, MongodbOriginal, VscodeOriginal, CsharpOriginal, ExpressOriginal } from 'devicons-react';
 import { LatestChangeElement } from '../ui/changelog/changelog-elements'
 
 const jetbrains_400weight = JetBrains_Mono({
@@ -79,7 +79,7 @@ export default function Page() {
               >
                 <Link className="flex" href="/changelog">
                   Click ​<p className="underline"> here </p>​ to
-                  see the most recent update to one of my projects
+                  see the most recent updates to my projects
                 </Link>
               </div>
               <br />
@@ -114,12 +114,16 @@ export default function Page() {
               <br />
               <br />
 
-              <div className="flex justify-center flex-row">
+              <div className="flex justify-evenly flex-row mx-3">
                 <TypescriptOriginal className="rounded-2xl" size="100" />
-                <NextjsOriginal size="100" />
+                <NextjsOriginal className="rounded-full border-white border-solid border-4" size="100" />
+                <div className="w-[100px] h-[100px] rounded-full flex justify-center content-center bg-white">
+                  <ExpressOriginal className="mt-3" size="80" />
+                </div>
                 <ReactOriginal size="100" />
+                <CsharpOriginal size="100" />
                 <MongodbOriginal size="100" />
-                <VscodeOriginal size={100} />
+                <VscodeOriginal size="100" />
               </div>
               
             </div>
