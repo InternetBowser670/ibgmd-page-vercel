@@ -1,43 +1,33 @@
 {
   "name": "ibgmd-page",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "its literally my website bro 😭",
+  "main": "index.js",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@clerk/nextjs": "^6.6.0",
-    "@clerk/themes": "^2.1.50",
+    "@clerk/nextjs": "^6.9.5",
+    "@clerk/themes": "^2.2.3",
     "@heroicons/react": "^2.2.0",
     "@vercel/analytics": "^1.4.1",
-    "@vercel/og": "^0.6.4",
     "@vercel/speed-insights": "^1.1.0",
-    "bootstrap": "^5.3.3",
+    "clerk": "^0.8.3",
     "clsx": "^2.1.1",
     "devicons-react": "^1.4.0",
-    "firebase": "^11.0.2",
-    "firebase-admin": "^13.0.1",
     "heroicons": "^2.2.0",
-    "mongodb": "^6.12.0",
-    "next": "15.0.3",
-    "react": "^19.0.0",
-    "react-dom": "19.0.0",
-    "svix": "^1.42.0",
-    "tsparticles": "^3.7.1"
+    "next": "^15.1.1",
+    "tailwindcss": "^3.4.17"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.4.20",
-    "daisyui": "^4.12.22",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.3",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5"
+    "@types/node": "22.10.2",
+    "@types/react": "19.0.2",
+    "typescript": "5.7.2"
   }
 }
