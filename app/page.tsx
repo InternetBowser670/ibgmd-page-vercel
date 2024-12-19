@@ -6,7 +6,6 @@ import { SignInButton, SignOutButton, SignedIn, SignedOut, UserButton } from '@c
 import { TypescriptOriginal, NextjsOriginal, ReactOriginal, MongodbOriginal, VscodeOriginal, ExpressOriginal } from 'devicons-react';
 import { LatestChangeElement } from '../ui/changelog/changelog-elements'
 
-
 const jetbrains_400weight = JetBrains_Mono({
   weight: "400",
   subsets: ["latin"],
@@ -116,11 +115,11 @@ export default function Page() {
               <br />
 
               <div className="flex justify-evenly flex-row mx-3">
-                <TypescriptOriginal className="rounded-2xl" size="100" />
                 <NextjsOriginal className="rounded-full border-white border-solid border-4" size="100" />
                 <div className="w-[100px] h-[100px] rounded-full flex justify-center content-center bg-white">
                   <ExpressOriginal className="mt-3" size="80" />
                 </div>
+                <TypescriptOriginal className="rounded-2xl" size="100" />
                 <ReactOriginal size="100" />
                 <MongodbOriginal size="100" />
                 <VscodeOriginal size={100} />
