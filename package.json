@@ -16,7 +16,6 @@
     "@clerk/nextjs": "^6.9.5",
     "@clerk/themes": "^2.2.3",
     "@heroicons/react": "^2.2.0",
-    "@types/node": "22.10.2",
     "@vercel/analytics": "^1.4.1",
     "@vercel/speed-insights": "^1.1.0",
     "clerk": "^0.8.3",
@@ -33,8 +32,9 @@
     "tsparticles": "^3.7.1"
   },
   "devDependencies": {
-    "@types/node": "22.10.2",
+    "@types/node": "^22.10.2",
     "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
     "eslint": "^9.17.0",
     "typescript": "^5.7.2"
   }
