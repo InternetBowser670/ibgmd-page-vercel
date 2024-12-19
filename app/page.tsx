@@ -6,6 +6,7 @@ import { SignInButton, SignOutButton, SignedIn, SignedOut, UserButton } from '@c
 import { TypescriptOriginal, NextjsOriginal, ReactOriginal, MongodbOriginal, VscodeOriginal, CsharpOriginal, ExpressOriginal } from 'devicons-react';
 import { LatestChangeElement } from '../ui/changelog/changelog-elements'
 
+
 const jetbrains_400weight = JetBrains_Mono({
   weight: "400",
   subsets: ["latin"],
