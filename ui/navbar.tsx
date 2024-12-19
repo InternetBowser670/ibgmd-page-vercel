@@ -1,7 +1,7 @@
 "use client";
 
 
-
+import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import React from "react";
 import { JetBrains_Mono } from "next/font/google";
 import clsx from "clsx";
@@ -68,6 +68,12 @@ export default function Navbar() {
                                 })}
                             </div>
                             <div className='flex justify-center pl-3 border-l-2 border-solid border-slate-400'>
+                                <SignedOut>
+                                    <SignInButton />
+                                </SignedOut>
+                                <SignedIn>
+                                    <UserButton />
+                                </SignedIn>
                                 
                             </div>
                         </div>
