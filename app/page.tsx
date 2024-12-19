@@ -129,28 +129,6 @@ export default function Page() {
             
 
             <br />
-          </div>
-
-          <div className="max-w-450 justify-around content-center flex-1">
-
-            <div className="bg-black border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
-              <div
-                className={
-                  "flex justify-center" + " " + jetbrains_800weight.className
-                }
-              >
-                <Link className="flex text-blue-500" href="/changelog">
-                  Click ​<p className="underline"> here </p>​ to
-                  see the most recent updates to my projects
-                </Link>
-              </div>
-              <br />
-              <hr className="opacity-50 border-blue-500 border-[2px] rounded-2xl" />
-              <br />
-              
-              <LatestChangeElement />
-            </div>
-      
             <div className="border-solid border-2 bg-black border-red-600 rounded-3xl p-5 m-5">
               <SignedOut>
                 <div className={"text-4xl flex justify-center text-blue-500 animate-rainbowText text-ellipsis" +
