@@ -3,7 +3,7 @@ import { JetBrains_Mono } from "next/font/google";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import Pfp from "@/ui/homepage/pfp";
 import { SignInButton, SignOutButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
-import { TypescriptOriginal, NextjsOriginal, ReactOriginal, MongodbOriginal, VscodeOriginal, CsharpOriginal, ExpressOriginal } from 'devicons-react';
+import { TypescriptOriginal, NextjsOriginal, ReactOriginal, MongodbOriginal, VscodeOriginal } from 'devicons-react';
 import { LatestChangeElement } from '../ui/changelog/changelog-elements'
 
 
@@ -72,13 +72,36 @@ export default function Page() {
             <br />
             <br />
             <br />
-            <div className="border-solid border-2 bg-black border-red-600 rounded-3xl p-5 m-5">
-              <p className={
-                    "text-2xl text-blue-500 opacity-50 text-ellipsis" +
-                    " " +
-                    jetbrains_800weight.className
-                  }>
-                    (unprofessional)
+            <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
+              <div
+                className={
+                  "flex justify-center" + " " + jetbrains_800weight.className
+                }
+              >
+                <Link className="flex" href="/changelog">
+                  Click ​<p className="underline"> here </p>​ to
+                  see the most recent update to one of my projects
+                </Link>
+              </div>
+              <br />
+              <hr className="opacity-50" />
+              <br />
+              
+              <LatestChangeElement />
+            </div>
+            
+
+            <br />
+          </div>
+
+          <div className="max-w-450 justify-around content-center flex-1">
+            <div className="border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
+            <p className={
+                  "text-2xl text-blue-500 opacity-50 text-ellipsis" +
+                  " " +
+                  jetbrains_800weight.className
+                }>
+                  (unprofessional)
               </p>
               <p className={
                   "text-3xl text-blue-500 text-ellipsis" +
@@ -99,9 +122,8 @@ export default function Page() {
                 </div>
                 <TypescriptOriginal className="rounded-2xl" size="100" />
                 <ReactOriginal size="100" />
-                <CsharpOriginal size="100" />
                 <MongodbOriginal size="100" />
-                <VscodeOriginal size="100" />
+                <VscodeOriginal size={100} />
               </div>
               
             </div>
