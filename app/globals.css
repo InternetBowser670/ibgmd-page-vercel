@@ -8,11 +8,88 @@
     --background: #0a0a0a;
     --foreground: #ededed;
 }
+
+@keyframes bgGradient {
+  0% {
+    transform: translate(100%, -100%);
+  }
+  50% {
+    transform: translate(100%, 0%);
+  }
+
+  100% {
+    transform: translate(100%, 100%);
+  }
+}
+
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: black;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.mainBackground{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  width: 100vw;
+  height: 100vh;
+  transform: rotate(45deg);
+}
+
+#bgLine-1::after {
+  animation-delay: 250ms;
+}
+
+#bgLine-2::after {
+  animation-delay: 500ms;
+}
+
+#bgLine-3::after {
+  animation-delay: 600ms;
+}
+
+#bgLine-4::after {
+  animation-delay: 400ms;
+}
+
+#bgLine-5::after {
+  animation-delay: 350ms;
+}
+
+#bgLine-6::after {
+  animation-delay: 200ms;
+}
+
+#bgLine-7::after {
+  animation-delay: 400ms;
+}
+
+.bg-line {
+  position: relative;
+  width: calc(100% / 3);
+  height: 100%;
+  border: 1px transparent white;
+  z-index: -101;
+}
+
+.bg-line::after {
+  content: '';
+  background-image: linear-gradient(black, black, black, black, #006aff, black, black, black, black);
+  position: absolute;
+  height: 100%;
+  z-index: -102;
+  padding: 3px;
+  margin: 5px;
+  animation: bgGradient 1s linear infinite;
+  transform: translate(200%, 200%);
+  animation-delay: 250ms;
+  background-size: 200%;
+  background-position: 0% 50%;
+}
+
 
 .makeImageCircular {
     border-radius:50%;
@@ -101,3 +178,4 @@ ul li::before {
 ul li.noBulletPoint::before {
   content: '​​​​​ ​ ​ ​ ​ ​ ​ ​';
 }
+
