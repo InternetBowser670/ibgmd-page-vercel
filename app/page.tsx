@@ -3,7 +3,7 @@ import { JetBrains_Mono } from "next/font/google";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import Pfp from "@/ui/homepage/pfp";
 import { SignInButton, SignOutButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
-import { TypescriptOriginal, NextjsOriginal, ReactOriginal, MongodbOriginal, VscodeOriginal } from 'devicons-react';
+import { TypescriptOriginal, NextjsOriginal, ReactOriginal, MongodbOriginal, VscodeOriginal, ExpressOriginal } from 'devicons-react';
 import { LatestChangeElement } from '../ui/changelog/changelog-elements'
 
 
