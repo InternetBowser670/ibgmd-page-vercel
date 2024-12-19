@@ -11,3 +11,14 @@ export interface Version {
     date: string;
     changeType: string;
 }
+
+export interface Project {
+    name: string;
+    desc: string;
+    date: string;
+    prjType: string;
+    imgUrl?: string;
+    prjStatus: string;
+    prjUrl?: string;
+}
+

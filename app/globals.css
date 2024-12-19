@@ -77,7 +77,7 @@ body {
 
 .bg-line::after {
   content: '';
-  background-image: linear-gradient(black, black, black, black, #006aff, black, black, black, black);
+  background-image: linear-gradient(#006aff, black, black, black, black, #006aff, black, black, black, black);
   position: absolute;
   height: 100%;
   z-index: -102;

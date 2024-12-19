@@ -2,6 +2,9 @@ import type { NextConfig } from "next";
 const path = require('path');
 
 const nextConfig: NextConfig = {
+  images: {
+    domains: ['www.internetbowser.com'],
+  },
   experimental: {
     turbo: {
       rules: {

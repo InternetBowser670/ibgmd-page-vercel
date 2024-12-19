@@ -58,6 +58,8 @@ export default function RootLayout({
           <div className="flex-grow">
             {children}
           </div>
+          <br />
+          <br />
           <div className="flex-grow-0 flex items-center justify-center">
             <footer className="relative bottom-0 w-full rounded-xl flex flex-row justify-between items-center">
               <VersionName />
