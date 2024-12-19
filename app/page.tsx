@@ -72,36 +72,13 @@ export default function Page() {
             <br />
             <br />
             <br />
-            <div className="bg-black border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
-              <div
-                className={
-                  "flex justify-center" + " " + jetbrains_800weight.className
-                }
-              >
-                <Link className="flex" href="/changelog">
-                  Click ​<p className="underline"> here </p>​ to
-                  see the most recent updates to my projects
-                </Link>
-              </div>
-              <br />
-              <hr className="opacity-50" />
-              <br />
-              
-              <LatestChangeElement />
-            </div>
-            
-
-            <br />
-          </div>
-
-          <div className="max-w-450 justify-around content-center flex-1">
             <div className="border-solid border-2 bg-black border-red-600 rounded-3xl p-5 m-5">
-            <p className={
-                  "text-2xl text-blue-500 opacity-50 text-ellipsis" +
-                  " " +
-                  jetbrains_800weight.className
-                }>
-                  (unprofessional)
+              <p className={
+                    "text-2xl text-blue-500 opacity-50 text-ellipsis" +
+                    " " +
+                    jetbrains_800weight.className
+                  }>
+                    (unprofessional)
               </p>
               <p className={
                   "text-3xl text-blue-500 text-ellipsis" +
@@ -116,11 +93,11 @@ export default function Page() {
               <br />
 
               <div className="flex justify-evenly flex-row mx-3">
-                <TypescriptOriginal className="rounded-2xl" size="100" />
                 <NextjsOriginal className="rounded-full border-white border-solid border-4" size="100" />
                 <div className="w-[100px] h-[100px] rounded-full flex justify-center content-center bg-white">
                   <ExpressOriginal className="mt-3" size="80" />
                 </div>
+                <TypescriptOriginal className="rounded-2xl" size="100" />
                 <ReactOriginal size="100" />
                 <CsharpOriginal size="100" />
                 <MongodbOriginal size="100" />
@@ -128,6 +105,31 @@ export default function Page() {
               </div>
               
             </div>
+            
+
+            <br />
+          </div>
+
+          <div className="max-w-450 justify-around content-center flex-1">
+
+            <div className="bg-black border-solid border-2 border-red-600 rounded-3xl p-5 m-5">
+              <div
+                className={
+                  "flex justify-center" + " " + jetbrains_800weight.className
+                }
+              >
+                <Link className="flex text-blue-500" href="/changelog">
+                  Click ​<p className="underline"> here </p>​ to
+                  see the most recent updates to my projects
+                </Link>
+              </div>
+              <br />
+              <hr className="opacity-50 border-blue-500 border-[2px] rounded-2xl" />
+              <br />
+              
+              <LatestChangeElement />
+            </div>
+      
             <div className="border-solid border-2 bg-black border-red-600 rounded-3xl p-5 m-5">
               <SignedOut>
                 <div className={"text-4xl flex justify-center text-blue-500 animate-rainbowText text-ellipsis" +

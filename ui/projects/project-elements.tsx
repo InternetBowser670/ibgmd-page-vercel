@@ -1,12 +1,7 @@
-import ChangelogEl from './changelog-element';
-import HomepageChangelogEl from './homepage-changelog-element'
+import ProjectEl from './project-element';
+import HomepageProjectEl from './homepage-project-element'
 
 const versions = {
-  "0.6.4": {
-    "date": "12/18/24",
-    "changes": "Working on subdomains (last step before projects)",
-    "type": "site"
-  },
   "0.6.3": {
     "date": "12/18/24",
     "changes": "Added a rainy background",
@@ -167,7 +162,7 @@ export function LatestChangeElement() {
   const firstItem = versions[firstKey as keyof typeof versions];
 
   return (
-    <HomepageChangelogEl
+    <HomepageProjectEl
       vername={firstKey}
       date={firstItem.date}
       changes={firstItem.changes}
@@ -191,7 +186,7 @@ export default function ChangelogElements() {
           const changeType = versions[vername].type;
 
           return (
-            <ChangelogEl
+            <ProjectEl
               key={vername}
               vername={vername}
               date={date}

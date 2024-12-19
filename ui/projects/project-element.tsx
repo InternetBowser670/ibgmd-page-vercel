@@ -17,7 +17,7 @@ const jetbrains_600weight = JetBrains_Mono({
 });
 
 
-export default function ChangelogEl(props: Version) {
+export default function ProjectEl(props: Version) {
   const vername = props.vername || "0.2.8";
   const changes = props.changes || "Finalized version indicator position";
   const date = props.date || "12/4/24"
