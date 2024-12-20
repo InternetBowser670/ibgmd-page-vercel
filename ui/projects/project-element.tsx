@@ -40,15 +40,12 @@ export default function ProjectEl(props: Project) {
                 : <XCircleIcon color="#ed2626" className="pr-2" width={35} />
               }
               <div className="flex content-center flex-row">
-                <h1 className={"text-2xl" + " " + jetbrains_800weight.className}>
+              <h1 className={"text-2xl" + " " + jetbrains_800weight.className}>
                   {
-                    (prjUrl) ? <a href={prjUrl} className="underline" >{name} ({prjType})</a>
-                    : <span>{name} ({prjType})</span>
+                    (prjUrl) ? <a className="underline" href={prjUrl}>{name} ({prjType}){" " + "- " + date}</a>
+                    : <span>{name} ({prjType}) {" " + "- " + date}</span>
                   }
                 </h1>
-                <p className={"text-lg relative left-3 text-slate-400" + " " + jetbrains_600weight.className}>
-                  {" " + "- " + date}
-                </p>
               </div>
             </div>
           </div>

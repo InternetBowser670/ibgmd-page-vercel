@@ -41,13 +41,10 @@ export default function HomepageProjectEl(props: Project) {
               <div className="flex content-center flex-row">
                 <h1 className={"text-2xl" + " " + jetbrains_800weight.className}>
                   {
-                    (prjUrl) ? <a className="underline" href={prjUrl}>{name} ({prjType})</a>
-                    : <span>{name} ({prjType})</span>
+                    (prjUrl) ? <a className="underline" href={prjUrl}>{name} ({prjType}){" " + "- " + date}</a>
+                    : <span>{name} ({prjType}) {" " + "- " + date}</span>
                   }
                 </h1>
-                <p className={"text-lg relative left-3 text-slate-400" + " " + jetbrains_600weight.className}>
-                  {" " + "- " + date}
-                </p>
               </div>
             </div>
           </div>
