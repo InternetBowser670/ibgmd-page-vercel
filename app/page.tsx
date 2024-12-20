@@ -4,7 +4,7 @@ import { MapPinIcon } from "@heroicons/react/24/solid";
 import Pfp from "@/ui/homepage/pfp";
 import { SignInButton, SignOutButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import { TypescriptOriginal, NextjsOriginal, ReactOriginal, MongodbOriginal, VscodeOriginal, ExpressOriginal } from 'devicons-react';
-import { LatestChangeElement } from '../ui/changelog/changelog-elements'
+import { SocialIcon } from "react-social-icons";
 import { LatestProjectElement } from "@/ui/projects/project-elements";
 
 const jetbrains_400weight = JetBrains_Mono({
@@ -92,7 +92,7 @@ export default function Page() {
 
               <br />
               <br />
-              <br />
+  
 
               <div className="flex justify-evenly flex-row mx-3">
                 <NextjsOriginal className="rounded-full border-white border-solid border-4" size="100" />
@@ -106,6 +106,19 @@ export default function Page() {
               </div>
 
             </div>
+            <br />
+            <div className={`border-solid border-2 bg-black border-red-600 rounded-3xl p-5 m-5 ${jetbrains_400weight.className}`}>
+              <h1 className="text-2xl">
+                Contact me: 
+              </h1>
+              <br />
+               <SocialIcon className="m-2" network="discord" url="https://discordapp.com/users/1209132582650773586" />
+               <SocialIcon className="m-2" url="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=joshua.ghattas@gmail.com&tf=1" />
+               <SocialIcon className="m-2" url="https://github.com/InternetBowser670" />
+               <SocialIcon className="m-2" url="https://internetbowser.slack.com/team/U086MBA282C" />
+            </div>
+            <br />
+
 
 
             <br />
