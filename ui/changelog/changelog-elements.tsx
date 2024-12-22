@@ -2,6 +2,11 @@ import ChangelogEl from './changelog-element';
 import HomepageChangelogEl from './homepage-changelog-element'
 
 const versions = {
+  "1.2.0": {
+    "date": "12/22/24",
+    "changes": "Added user API and settings page",
+    "type": "site"
+  },
   "1.1.1": {
     "date": "12/19/24",
     "changes": "Restyled projects silghtly",

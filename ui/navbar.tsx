@@ -23,7 +23,8 @@ export default function Navbar() {
             href: "/projects",
         },
         { name: "Changelog", href: "/changelog" },
-        { name: "Donate", href: "https://pay.internetbowser.com" }
+        { name: "Donate", href: "https://pay.internetbowser.com" },
+        { name: "Settings", href: "/settings"},
     ];
 
     const pathname = usePathname();
