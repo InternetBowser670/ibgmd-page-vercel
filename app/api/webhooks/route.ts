@@ -89,7 +89,12 @@ export async function POST(req: Request) {
     } else if (eventType === "user.updated") {
       const userData = evt.data
       const updateResult = await users.updateOne( { id: evt.data.id },
-        { $set: userData });
+          {
+            $set: {
+              ...userData,
+              desc: `Hi! I'm ${userData.username}`  // dynamically set the 'desc' field
+            }
+          });
       console.log(
         `A document was updated ${updateResult.modifiedCount} times`,
       );

@@ -2,6 +2,11 @@ import ChangelogEl from './changelog-element';
 import HomepageChangelogEl from './homepage-changelog-element'
 
 const versions = {
+  "1.5.0": {
+    "date": "12/22/24",
+    "changes": "Made all new users have a default description",
+    "type": "site"
+  },
   "1.4.0": {
     "date": "12/22/24",
     "changes": "Made the settings page display some text if you are not signed in",
