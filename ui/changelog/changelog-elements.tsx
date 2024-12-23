@@ -2,8 +2,13 @@ import ChangelogEl from './changelog-element';
 import HomepageChangelogEl from './homepage-changelog-element'
 
 const versions = {
+  "1.5.1": {
+    "date": "12/23/24",
+    "changes": "Improved navbar logic",
+    "type": "site"
+  },
   "1.5.0": {
-    "date": "12/22/24",
+    "date": "12/23/24",
     "changes": "Made all new users have a default description",
     "type": "site"
   },
