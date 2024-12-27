@@ -73,6 +73,16 @@ export default function Page() {
             </div>
             <br />
             <br />
+            <div className={`border-solid border-2 bg-black border-red-600 rounded-3xl p-5 m-5 ${jetbrains_400weight.className}`}>
+              <h1 className="text-2xl">
+                Contact me: 
+              </h1>
+              <br />
+               <SocialIcon className="m-2" network="discord" url="https://discordapp.com/users/1209132582650773586" />
+               <SocialIcon className="m-2" url="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=joshua.ghattas@gmail.com&tf=1" />
+               <SocialIcon className="m-2" url="https://github.com/InternetBowser670" />
+               <SocialIcon className="m-2" url="https://internetbowser.slack.com/team/U086MBA282C" />
+            </div>
             <br />
             <div className="border-solid border-2 bg-black border-red-600 rounded-3xl p-5 m-5">
               <p className={
@@ -107,16 +117,7 @@ export default function Page() {
 
             </div>
             <br />
-            <div className={`border-solid border-2 bg-black border-red-600 rounded-3xl p-5 m-5 ${jetbrains_400weight.className}`}>
-              <h1 className="text-2xl">
-                Contact me: 
-              </h1>
-              <br />
-               <SocialIcon className="m-2" network="discord" url="https://discordapp.com/users/1209132582650773586" />
-               <SocialIcon className="m-2" url="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=joshua.ghattas@gmail.com&tf=1" />
-               <SocialIcon className="m-2" url="https://github.com/InternetBowser670" />
-               <SocialIcon className="m-2" url="https://internetbowser.slack.com/team/U086MBA282C" />
-            </div>
+            
             <br />
 
 
@@ -146,6 +147,8 @@ export default function Page() {
             
 
             <br />
+
+            
             <div className="border-solid border-2 bg-black border-red-600 rounded-3xl p-5 m-5">
               <SignedOut>
                 <div className={"text-4xl flex justify-center text-blue-500 animate-rainbowText text-ellipsis" +
