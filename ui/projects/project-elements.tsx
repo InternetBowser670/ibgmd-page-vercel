@@ -4,7 +4,7 @@ import HomepageProjectEl from './homepage-project-element'
 const projects = {
   "Convoes 2": {
     "date": "12/19/24",
-    "desc": "Like Convoes, Convoes 2 is an only chatting service. Convoes 2 will have an updated ui and more features, releasing early 2025",
+    "desc": "Like Convoes, Convoes 2 is an online chatting service. Convoes 2 will have an updated ui and more features, releasing early 2025",
     "type": "Social",
     "status": "dev",
     "imgUrl": "/convoes-2-logo.png",

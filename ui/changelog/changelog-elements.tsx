@@ -2,6 +2,11 @@ import ChangelogEl from './changelog-element';
 import HomepageChangelogEl from './homepage-changelog-element'
 
 const versions = {
+  "1.6.0": {
+    "date": "1/13/25",
+    "changes": "Changed the donate link to https://buymeacoffee.com/internetbowser",
+    "type": "site"
+  },
   "1.5.0": {
     "date": "12/22/24",
     "changes": "Made all new users have a default description",
@@ -24,7 +29,7 @@ const versions = {
   },
   "1.1.1": {
     "date": "12/19/24",
-    "changes": "Restyled projects silghtly",
+    "changes": "Restyled projects slightly",
     "type": "site"
   },
   "1.1.0": {
@@ -34,7 +39,7 @@ const versions = {
   },
   "1.0.0": {
     "date": "12/19/24",
-    "changes": "Added projects, the final feature neccesary to complete the initial developement of the site",
+    "changes": "Added projects, the final feature neccessary to complete the initial development of the site",
     "type": "site"
   },
   "0.6.2": {

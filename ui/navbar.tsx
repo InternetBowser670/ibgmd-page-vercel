@@ -21,7 +21,7 @@ export default function Navbar() {
         { name: "Home", href: "/", icon: HomeIcon },
         { name: "Projects", href: "/projects", icon: ComputerDesktopIcon },
         { name: "Changelog", href: "/changelog", icon: ArchiveBoxIcon },
-        { name: "Donate", href: "https://pay.internetbowser.com", icon: CurrencyDollarIcon },
+        { name: "Donate", href: "https://www.buymeacoffee.com/internetbowser", icon: CurrencyDollarIcon },
         { name: "Settings", href: "/settings", icon: Cog6ToothIcon },
     ];
 
