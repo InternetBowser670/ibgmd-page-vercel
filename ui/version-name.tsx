@@ -13,7 +13,8 @@ export default function VersionName() {
           "text-md truncate relative bottom-8 m-3 p-3 text-ellipsis text-white" +
           " " +
           jetbrains_400weight.className
-        }>
+        }
+      >
         Made by InternetBowser - site version: 1.6.0, Compiled 1/13/25
       </h1>
     </>
