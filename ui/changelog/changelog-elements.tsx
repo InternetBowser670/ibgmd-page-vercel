@@ -2,11 +2,10 @@ import ChangelogEl from './changelog-element';
 import HomepageChangelogEl from './homepage-changelog-element'
 
 const versions = {
-<<<<<<< HEAD
   "1.6.0": {
     "date": "1/13/25",
-    "changes": "Changed the donate link to https://buymeacoffee.com/internetbowser",
-=======
+    "changes": "Changed the donate link to https://buymeacoffee.com/internetbowser"
+  },
   "1.5.2": {
     "date": "12/26/24",
     "changes": "Slightly rearranged the homepage",
@@ -15,7 +14,6 @@ const versions = {
   "1.5.1": {
     "date": "12/23/24",
     "changes": "Improved navbar logic",
->>>>>>> fd457cfb142dae7abda9c8c603ded34952743e37
     "type": "site"
   },
   "1.5.0": {
