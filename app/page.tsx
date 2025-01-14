@@ -80,6 +80,7 @@ export default function Page() {
               <br />
                <SocialIcon className="m-2" network="discord" url="https://discordapp.com/users/1209132582650773586" />
                <SocialIcon className="m-2" url="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=joshua.ghattas@gmail.com&tf=1" />
+               <SocialIcon className="m-2" url="https://buymeacoffee.com/internetbowser" />
                <SocialIcon className="m-2" url="https://github.com/InternetBowser670" />
                <SocialIcon className="m-2" url="https://internetbowser.slack.com/team/U086MBA282C" />
             </div>
