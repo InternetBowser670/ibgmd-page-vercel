@@ -26,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="" className="h-full">
       <head>
+        <script src="https://alwingulla.com/88/tag.min.js" data-zone="126292" async data-cfasync="false"></script>
         <meta name="google-adsense-account" content="ca-pub-7456236988733866" />
         <meta
           name="viewport"
@@ -43,32 +44,32 @@ export default function RootLayout({
       </head>
       <body className="m-5 h-full antialiased flex flex-col">
         <ClerkProvider appearance={{
-            baseTheme: dark,
-            elements: {
-              signIn: 'bg-slate-500 text-white',
-            },
-            variables: {
-              
-            },    
-          }}
->
-        <Navbar />
-        <br />
-        <div className="flex-grow flex flex-col">
-          <div className="flex-grow">
-            {children}
-          </div>
+          baseTheme: dark,
+          elements: {
+            signIn: 'bg-slate-500 text-white',
+          },
+          variables: {
+
+          },
+        }}
+        >
+          <Navbar />
           <br />
-          <br />
-          <div className="flex-grow-0 flex items-center justify-center">
-            <footer className="relative bottom-0 w-full rounded-xl flex flex-row justify-between items-center">
-              <VersionName />
-            </footer>
+          <div className="flex-grow flex flex-col">
+            <div className="flex-grow">
+              {children}
+            </div>
+            <br />
+            <br />
+            <div className="flex-grow-0 flex items-center justify-center">
+              <footer className="relative bottom-0 w-full rounded-xl flex flex-row justify-between items-center">
+                <VersionName />
+              </footer>
+            </div>
           </div>
-        </div>
         </ClerkProvider>
         <Analytics />
-        <SpeedInsights/>
+        <SpeedInsights />
         <div className="mainBackground">
           <div id='bgLine-1' className="bg-line">
 
