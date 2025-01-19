@@ -26,7 +26,6 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="" className="h-full">
       <head>
-        <script src="https://alwingulla.com/88/tag.min.js" data-zone="126292" async data-cfasync="false"></script>
         <meta name="google-adsense-account" content="ca-pub-7456236988733866" />
         <meta
           name="viewport"
