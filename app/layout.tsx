@@ -54,6 +54,7 @@ export default function RootLayout({
         >
           <Navbar />
           <br />
+          <br />
           <div className="flex-grow flex flex-col">
             <div className="flex-grow">
               {children}

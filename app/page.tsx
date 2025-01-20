@@ -48,7 +48,7 @@ export default function Page() {
                   InternetBowser
                 </h1>
               </div>
-              <div className="flex relative bottom-[225]">
+              <div className="flex relative bottom-[225px]">
                 <div className="" >
                   <MapPinIcon className="w-[40px] h-[40px] left-[40px] relative animate-ping fill-red-600 stroke-red-600" />
                 </div>
