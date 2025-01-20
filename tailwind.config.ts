@@ -38,6 +38,10 @@ export default {
   theme: {
     extend: {
       keyframes: {
+        fadeIn: {
+					from: { opacity: "0" },
+					to: { opacity: "1" },
+				},
         rainbowText: {
           '0%': {
             color: '#ff4545'
@@ -77,6 +81,7 @@ export default {
         }
       },
       animation: {
+        'fade': 'fadeIn 1s ease-in-out',
         'rainbowText': 'rainbowText 7s linear infinite',
         'rainbowText-fast': 'rainbowText 4s linear infinite',
         'rainbowBorder': 'rainbowBorder 7s linear infinite',
