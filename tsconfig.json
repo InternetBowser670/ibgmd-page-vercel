@@ -7,6 +7,7 @@
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
+    "baseUrl": ".",
     "module": "esnext",
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "bundler",
