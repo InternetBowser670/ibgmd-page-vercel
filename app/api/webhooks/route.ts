@@ -45,6 +45,7 @@ export async function POST(req: Request) {
 
   // If there are no headers, error out
   if (!svix_id || !svix_timestamp || !svix_signature) {
+    await client.close()
     return new Response('Error: Missing Svix headers', {
       status: 400,
     })
@@ -65,6 +66,7 @@ export async function POST(req: Request) {
     }) as WebhookEvent
   } catch (err) {
     console.error('Error: Could not verify webhook:', err)
+    await client.close()
     return new Response('Error: Verification error', {
       status: 400,
     })
@@ -101,11 +103,12 @@ export async function POST(req: Request) {
     }
   } catch (error) {
     console.error("Error updating Firebase:", error);
+    await client.close()
     return new Response("Error updating Firebase", { status: 500 });
   }
 
 
   console.log("Webhook Recieved")
-
+  await client.close()
   return new Response('Webhook received', { status: 200 })
 }
