@@ -9,4 +9,11 @@ export default [
   {languageOptions: { globals: {...globals.browser, ...globals.node} }},
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
+  ...compat.config({
+    extends: ['next'],
+    rules: {
+      'react/react/react-in-jsx-scope': 'off',
+    },
+  }),
+
 ];
