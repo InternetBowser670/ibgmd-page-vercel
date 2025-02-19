@@ -3,6 +3,7 @@
 import { JetBrains_Mono } from "next/font/google";
 import { UserProfile } from "@clerk/nextjs";
 import { useUser } from "@clerk/nextjs";
+import React from "react";
 
 const jetbrains_400weight = JetBrains_Mono({
   weight: "400",
@@ -17,7 +18,15 @@ export default function SettingsPage() {
   }
 
   if (!user) {
-    return <div className={`h-full w-full flex justify-center ${jetbrains_400weight.className}`}>You need to sign in to view this page.</div>;
+    return (
+      <>
+        <br />
+        <br />
+        <div className={`h-full w-full flex justify-center ${jetbrains_400weight.className}`}>
+          You need to sign in to view this page.
+        </div>
+      </>
+    );
   }
 
   return (

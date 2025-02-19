@@ -15,6 +15,7 @@
   "dependencies": {
     "@clerk/nextjs": "^6.9.5",
     "@clerk/themes": "^2.2.3",
+    "@eslint/js": "^9.20.0",
     "@heroicons/react": "^2.2.0",
     "@vercel/analytics": "^1.4.1",
     "@vercel/speed-insights": "^1.1.0",
@@ -23,13 +24,16 @@
     "clsx": "^2.1.1",
     "devicons-react": "^1.4.0",
     "dotenv": "^16.4.7",
+    "eslint-plugin-react": "^7.37.4",
     "framer-motion": "^12.0.0",
+    "globals": "^15.15.0",
     "heroicons": "^2.2.0",
     "lucide-react": "^0.473.0",
     "mongodb": "^6.12.0",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react-fast-marquee": "^1.6.5",
     "react-social-icons": "^6.18.0",
     "source-map-js": "^1.2.1",
     "svix": "^1.42.0",
@@ -37,13 +41,14 @@
     "tailwindcss": "^3.4.17",
     "tailwindcss-animate": "^1.0.7",
     "ts-node": "^10.9.2",
-    "tsparticles": "^3.7.1"
+    "tsparticles": "^3.7.1",
+    "typescript-eslint": "^8.24.1"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
-    "eslint": "^9.17.0",
+    "eslint": "^9.20.1",
     "typescript": "^5.7.2"
   }
 }

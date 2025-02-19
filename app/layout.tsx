@@ -6,6 +6,9 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from '@clerk/themes'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
+import React from "react";
+
+
 /*import { JetBrains_Mono } from "next/font/google";
 
 const jetbrains_400weight = JetBrains_Mono({
@@ -42,58 +45,59 @@ export default function RootLayout({
         ></script>
       </head>
       <body className="m-5 h-full antialiased flex flex-col">
-        <ClerkProvider appearance={{
-          baseTheme: dark,
-          elements: {
-            signIn: 'bg-slate-500 text-white',
-          },
-          variables: {
+          <ClerkProvider appearance={{
+            baseTheme: dark,
+            elements: {
+              signIn: 'bg-slate-500 text-white',
+            },
+            variables: {
 
-          },
-        }}
-        >
-          <Navbar />
-          <br />
-          <br />
-          <div className="flex-grow flex flex-col">
-            <div className="flex-grow">
-              {children}
-            </div>
+            },
+          }}
+          >
+            <Navbar />
             <br />
             <br />
-            <div className="flex-grow-0 flex items-center justify-center">
-              <footer className="relative bottom-0 w-full rounded-xl flex flex-row justify-between items-center">
-                <VersionName />
-              </footer>
+            <div className="flex-grow flex flex-col">
+              <div className="flex-grow">
+                {children}
+              </div>
+              <br />
+              <br />
+              <div className="flex-grow-0 flex items-center justify-center">
+                <footer className="relative bottom-0 w-full rounded-xl flex flex-row justify-between items-center">
+                  <VersionName />
+                </footer>
+              </div>
             </div>
-          </div>
-        </ClerkProvider>
-        <Analytics />
-        <SpeedInsights />
-        <div className="mainBackground">
-          <div id='bgLine-1' className="bg-line">
+          </ClerkProvider>
+          <Analytics />
+          <SpeedInsights />
+          <div className="mainBackground">
+            <div id='bgLine-1' className="bg-line">
+
+            </div>
+            <div id='bgLine-2' className="bg-line">
+
+            </div>
+            <div id='bgLine-3' className="bg-line">
+
+            </div>
+            <div id='bgLine-4' className="bg-line">
+
+            </div>
+            <div id='bgLine-5' className="bg-line">
+
+            </div>
+            <div id='bgLine-6' className="bg-line">
+
+            </div>
+            <div id='bgLine-7' className="bg-line">
+
+            </div>
 
           </div>
-          <div id='bgLine-2' className="bg-line">
 
-          </div>
-          <div id='bgLine-3' className="bg-line">
-
-          </div>
-          <div id='bgLine-4' className="bg-line">
-
-          </div>
-          <div id='bgLine-5' className="bg-line">
-
-          </div>
-          <div id='bgLine-6' className="bg-line">
-
-          </div>
-          <div id='bgLine-7' className="bg-line">
-
-          </div>
-
-        </div>
       </body>
     </html>
   );
