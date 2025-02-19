@@ -57,8 +57,7 @@ export default function Page() {
         <div className={`w-[99vw] animate-fade flex italic h-[100vh] ${space_700weight_italic.className}`}>
           <div className="h-[100vh] items-center content-center pl-50">
             <div className={`ml-[2px]`}>
-              {/*no real date*/}
-              <div className={`${jetbrains_400weight.className} relative left-[400] top-[350px] text-3xl`}><TimeSince startDate="2012" /> full stack web developer</div>
+              <div className={`${jetbrains_400weight.className} relative left-[400px] top-[350px] text-3xl`}>Full stack web developer</div>
               <h1
                 className={
                   "text-[170px] left-[50px] bottom-[50px] truncate relative text-ellipsis text-slate-800" +
