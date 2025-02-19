@@ -1,4 +1,5 @@
 import { JetBrains_Mono } from "next/font/google";
+import React from "react";
 
 const jetbrains_400weight = JetBrains_Mono({
   weight: "400",
@@ -15,7 +16,7 @@ export default function VersionName() {
           jetbrains_400weight.className
         }
       >
-        Made by InternetBowser - site version: 1.8.0, Compiled 1/20/25
+        Made by InternetBowser - site version: 1.9.0, Compiled 2/18/25
       </h1>
     </>
   );
