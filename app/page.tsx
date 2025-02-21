@@ -106,7 +106,7 @@ export default function Page() {
                 <p className={`${jetbrains_400weight.className}`}>Programming with these tools:</p>
               </div>
               <br />
-              <Marquee className="bg-gray-800 py-2" autoFill={true} speed={100}>
+              <Marquee className="bg-gray-800 py-2" autoFill={true} speed={200}>
 
                 <div className="flex ">
                   <NextjsOriginal className="rounded-full mx-5 border-white border-solid border-4" size="100" />
