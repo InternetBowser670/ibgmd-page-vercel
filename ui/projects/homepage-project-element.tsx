@@ -33,16 +33,16 @@ export default function HomepageProjectEl(props: Project) {
         <div className="flex flex-col justify-center">
           <div className="flex flex-row justify-between">
             <div className="flex">
-             {
+              {
                 prjStatus === "active" ? <CheckCircleIcon color="#17a61a" className="pr-2" width={35} />
-                : prjStatus === "dev" ? <MinusCircleIcon color="#d4c71c" className="pr-2" width={35} />
-                : <XCircleIcon color="#ed2626" className="pr-2" width={35} />
+                  : prjStatus === "dev" ? <MinusCircleIcon color="#d4c71c" className="pr-2" width={35} />
+                    : <XCircleIcon color="#ed2626" className="pr-2" width={35} />
               }
               <div className="flex content-center flex-row">
                 <h1 className={"text-2xl" + " " + jetbrains_800weight.className}>
                   {
                     (prjUrl) ? <a className="underline" href={prjUrl}>{name} ({prjType}){" " + "- " + date}</a>
-                    : <span>{name} ({prjType}) {" " + "- " + date}</span>
+                      : <span>{name} ({prjType}) {" " + "- " + date}</span>
                   }
                 </h1>
               </div>
@@ -57,7 +57,7 @@ export default function HomepageProjectEl(props: Project) {
                 {desc}
               </p>
               <div className="flex w-[100px] justify-center flex-row flex-wrap-reverse content-center">
-                <Image alt="" width={100} className="h-[100px] invisible xl:visible" height={100} src={imgUrl}></Image>
+                {typeof imgUrl === "string" && (<Image alt="" width={100} className="h-[100px] invisible xl:visible" height={100} src={imgUrl || "e"}></Image>)}
               </div>
             </div>
           </div>
