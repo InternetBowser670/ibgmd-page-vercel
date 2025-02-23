@@ -24,7 +24,7 @@ export default function ProjectEl(props: Project) {
   const desc = props.desc || "Finalized version indicator position";
   const date = props.date || "12/4/24"
   const prjType = props.prjType || "site"
-  const imgUrl = props.imgUrl || "https://www.internetbowser.com/goofyskull-nobg.png"
+  const imgUrl = props.imgUrl
   const prjStatus = props.prjStatus || "active"
   const prjUrl = props.prjUrl
 
@@ -58,7 +58,7 @@ export default function ProjectEl(props: Project) {
                 {desc}
               </p>
               <div className="flex w-[100px] justify-center flex-row flex-wrap-reverse content-center">
-                <Image alt="" width={100} className="h-[100px] invisible xl:visible" height={100} src={imgUrl}></Image>
+                {typeof imgUrl === "string" && (<Image alt="" width={100} className="h-[100px] invisible xl:visible" height={100} src={imgUrl || "e"}></Image>)}
               </div>
             </div>
           </div>

@@ -3,6 +3,11 @@ import HomepageChangelogEl from './homepage-changelog-element'
 import React from 'react';
 
 const versions = {
+  "1.10.0": {
+    "date": "2/22/25",
+    "changes": "Added Lynx AI to the projects",
+    "type": "site"
+  },
   "1.9.0": {
     "date": "2/18/25",
     "changes": "Redid the homepage again",

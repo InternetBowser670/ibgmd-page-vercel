@@ -2,6 +2,14 @@ import ProjectEl from './project-element';
 import HomepageProjectEl from './homepage-project-element'
 
 const projects = {
+  "Lynx AI": {
+    "date": "12/20/25",
+    "desc": "Lynx AI is an AI-powered edicational tool which can be used to learn skills and other topics.",
+    "type": "AI",
+    "status": "dev",
+    "imgUrl": false,
+    "prjUrl": "https://lynx-ai-demo.com"
+  },
   "Convoes 2": {
     "date": "12/19/24",
     "desc": "Like Convoes, Convoes 2 is an online chatting service. Convoes 2 has an updated ui and more features",

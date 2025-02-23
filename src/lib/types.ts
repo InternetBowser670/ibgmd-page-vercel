@@ -17,7 +17,7 @@ export interface Project {
     desc: string;
     date: string;
     prjType: string;
-    imgUrl?: string;
+    imgUrl?: string | boolean;
     prjStatus: string;
     prjUrl?: string;
 }
