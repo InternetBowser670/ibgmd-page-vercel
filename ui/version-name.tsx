@@ -16,7 +16,7 @@ export default function VersionName() {
           jetbrains_400weight.className
         }
       >
-        Made by InternetBowser - site version: 1.10.0, Compiled 2/22/25
+        Made by InternetBowser - site version: 1.11.0, Compiled 2/25/25
       </h1>
     </>
   );

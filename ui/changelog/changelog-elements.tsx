@@ -3,6 +3,11 @@ import HomepageChangelogEl from './homepage-changelog-element'
 import React from 'react';
 
 const versions = {
+  "1.11.0": {
+    "date": "2/25/25",
+    "changes": "Added the Lynx AI logo",
+    "type": "site"
+  },
   "1.10.1": {
     "date": "2/22/25",
     "changes": "Fixed type mismatch error",
