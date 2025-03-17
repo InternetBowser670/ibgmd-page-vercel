@@ -3,6 +3,11 @@ import HomepageChangelogEl from './homepage-changelog-element'
 import React from 'react';
 
 const versions = {
+  "1.12.0": {
+    "date": "3/16/25",
+    "changes": "Brought the 'contact me' icons to the hero section",
+    "type": "site"
+  },
   "1.11.0": {
     "date": "2/25/25",
     "changes": "Added the Lynx AI logo",
