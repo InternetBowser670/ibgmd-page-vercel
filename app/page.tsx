@@ -78,9 +78,7 @@ export default function Page() {
         >
           <div className="h-[100vh] items-center content-center pl-50">
             <div className={`ml-[2px]`}>
-              <div
-                className={`${jetbrains_400weight.className} relative left-[400px] top-[420px] text-3xl`}
-              ></div>
+            <div className={`${jetbrains_400weight.className} relative left-[700px] top-[309px] text-3xl`}>Full stack web developer</div>
               <h1
                 className={
                   "text-[170px] left-[50px] bottom-[50px] truncate relative text-ellipsis text-slate-800" +
@@ -192,7 +190,7 @@ export default function Page() {
         <br />
 
         <FadeInDiv>
-          <div className="border-solid border-2 bg-black border-red-600 rounded-3xl p-5 m-5">
+          <div className="border-solid border-2 shrink  bg-black border-red-600 rounded-3xl p-5 m-5">
             <div
               className={
                 "flex justify-center" + " " + jetbrains_800weight.className
