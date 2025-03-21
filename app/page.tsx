@@ -78,7 +78,11 @@ export default function Page() {
         >
           <div className="h-[100vh] items-center content-center pl-50">
             <div className={`ml-[2px]`}>
-            <div className={`${jetbrains_400weight.className} relative left-[700px] top-[309px] text-3xl`}>Full stack web developer</div>
+              <div
+                className={`${jetbrains_400weight.className} relative left-[400px] top-[305px] text-3xl`}
+              >
+                Full stack web developer <span className="text-gray-600">|</span> 
+              </div>
               <h1
                 className={
                   "text-[170px] left-[50px] bottom-[50px] truncate relative text-ellipsis text-slate-800" +
@@ -111,9 +115,10 @@ export default function Page() {
                     "text-3xl mx-4  " + " " + jetbrains_400weight.className
                   }
                 >
-                  Houston, Texas - 
+                  Houston, Texas -
                 </p>
-                <SocialIcon
+                <div className="flex items-center relative left-[480px]">
+                  <SocialIcon
                     className="m-2"
                     network="discord"
                     url="https://discordapp.com/users/1209132582650773586"
@@ -130,6 +135,7 @@ export default function Page() {
                     className="m-2"
                     url="https://github.com/InternetBowser670"
                   />
+                </div>
               </div>
             </div>
           </div>
