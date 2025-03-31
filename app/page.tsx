@@ -78,24 +78,10 @@ export default function Page() {
         >
           <div className="h-[100vh] items-center content-center pl-50">
             <div className={`ml-[2px]`}>
-              <div
-                className={`${jetbrains_400weight.className} relative left-[400px] top-[305px] text-3xl`}
-              >
-                Full stack web developer <span className="text-gray-600">|</span> 
-              </div>
-              <h1
-                className={
-                  "text-[170px] left-[50px] bottom-[50px] truncate relative text-ellipsis text-slate-800" +
-                  " " +
-                  space_700weight.className
-                }
-              >
-                ibgmd/
-              </h1>
               <div className="flex">
                 <h1
                   className={
-                    "text-[150px] p-0 relative bottom-[200px] italic text-blue-500" +
+                    "text-[8vw] p-0 relative left-[50px] bottom-[170px] italic text-blue-500" +
                     " " +
                     space_700weight_italic.className
                   }
@@ -103,38 +89,44 @@ export default function Page() {
                   InternetBowser
                 </h1>
               </div>
-              <div className="flex items-center relative bottom-[225px]">
-                <div className="">
-                  <MapPinIcon className="w-[40px] h-[40px] left-[40px] relative animate-ping fill-red-600 stroke-red-600" />
-                </div>
-                <div className="">
-                  <MapPinIcon className="w-[40px] h-[40px] fill-red-600 stroke-red-600" />
-                </div>
-                <p
-                  className={
-                    "text-3xl mx-4  " + " " + jetbrains_400weight.className
-                  }
+              <div className="flex -left-[400px] relative bottom-[425px]">
+                <div
+                  className={`${jetbrains_400weight.className} flex flex-wrap relative items-center left-[400px] top-[305px] text-3xl`}
                 >
-                  Houston, Texas -
-                </p>
-                <div className="flex items-center relative left-[480px]">
-                  <SocialIcon
-                    className="m-2"
-                    network="discord"
-                    url="https://discordapp.com/users/1209132582650773586"
-                  />
-                  <SocialIcon
-                    className="m-2"
-                    url="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=joshua.ghattas@gmail.com&tf=1"
-                  />
-                  <SocialIcon
-                    className="m-2"
-                    url="https://buymeacoffee.com/internetbowser"
-                  />
-                  <SocialIcon
-                    className="m-2"
-                    url="https://github.com/InternetBowser670"
-                  />
+                  <div className="">
+                    <MapPinIcon className="w-[40px] h-[40px] left-[40px] relative animate-ping fill-red-600 stroke-red-600" />
+                  </div>
+                  <div className="">
+                    <MapPinIcon className="w-[40px] h-[40px] fill-red-600 stroke-red-600" />
+                  </div>
+                  <p
+                    className={
+                      "text-[2vw] mx-4 border-r-gray-500 border-r-2 pr-5" +
+                      " " +
+                      jetbrains_400weight.className
+                    }
+                  >
+                    Houston, Texas - Full stack web developer
+                  </p>
+                  <div>
+                    <SocialIcon
+                      className="m-2"
+                      network="discord"
+                      url="https://discordapp.com/users/1209132582650773586"
+                    />
+                    <SocialIcon
+                      className="m-2"
+                      url="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=joshua.ghattas@gmail.com&tf=1"
+                    />
+                    <SocialIcon
+                      className="m-2"
+                      url="https://buymeacoffee.com/internetbowser"
+                    />
+                    <SocialIcon
+                      className="m-2"
+                      url="https://github.com/InternetBowser670"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
