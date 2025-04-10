@@ -29,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="" className="h-full">
       <head>
+        <meta name="ezoic-site-verification" content="HaxZWjtMpHcgEFZlRwJ7m2j9EM8avy" />
         <meta name="google-adsense-account" content="ca-pub-7456236988733866" />
         <meta
           name="viewport"
