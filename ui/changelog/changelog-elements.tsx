@@ -3,6 +3,11 @@ import HomepageChangelogEl from './homepage-changelog-element'
 import React from 'react';
 
 const versions = {
+  "1.12.2": {
+    "date": "4/17/25",
+    "changes": "Optimized mobile layout",
+    "type": "site"
+  },
   "1.12.1": {
     "date": "3/31/25",
     "changes": "Made the hero section's layout more responsive",

@@ -14,7 +14,17 @@ export default function SettingsPage() {
   const { user, isLoaded } = useUser();
 
   if (!isLoaded) {
-    return <div className={`h-full w-full flex justify-center ${jetbrains_400weight.className}`}>Loading...</div>;
+    return (
+      <>
+        <br />
+        <br />
+        <div
+          className={`h-full w-full flex justify-center ${jetbrains_400weight.className}`}
+        >
+          Loading...
+        </div>
+      </>
+    );
   }
 
   if (!user) {
@@ -22,7 +32,9 @@ export default function SettingsPage() {
       <>
         <br />
         <br />
-        <div className={`h-full w-full flex justify-center ${jetbrains_400weight.className}`}>
+        <div
+          className={`h-full w-full flex justify-center ${jetbrains_400weight.className}`}
+        >
           You need to sign in to view this page.
         </div>
       </>
@@ -31,9 +43,14 @@ export default function SettingsPage() {
 
   return (
     <>
-      <div className={`h-full w-full flex justify-center ${jetbrains_400weight.className}`}>
+      <div
+        className={`h-full w-full flex justify-center ${jetbrains_400weight.className}`}
+      >
+        <br />
+        <br />
+        <br />
         <UserProfile />
       </div>
     </>
-  )
+  );
 }

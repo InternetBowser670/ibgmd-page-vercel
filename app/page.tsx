@@ -134,7 +134,7 @@ export default function Page() {
         </div>
         <div className="p-5">
           <FadeInDiv>
-            <div className="w-full flex flex-col bg-black justify-center content-center border-red-600 rounded-3xl py-3 border-2">
+            <div className="w-full flex flex-col bg-black p-2 justify-center overflow-x-scroll content-center border-red-600 rounded-3xl py-3 border-2">
               <div className="flex content-center justify-center items-center">
                 <p className={`${jetbrains_400weight.className}`}>
                   Programming with these tools:
@@ -188,7 +188,7 @@ export default function Page() {
         <br />
 
         <FadeInDiv>
-          <div className="border-solid border-2 shrink  bg-black border-red-600 rounded-3xl p-5 m-5">
+          <div className="border-solid border-2 shrink overflow-x-scroll bg-black border-red-600 rounded-3xl p-5 m-5">
             <div
               className={
                 "flex justify-center" + " " + jetbrains_800weight.className

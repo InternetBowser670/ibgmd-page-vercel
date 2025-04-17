@@ -72,14 +72,13 @@ export default function Navbar() {
                                 );
                             })}
                         </div>
-                        <div className='flex justify-center pl-3 border-l-2 border-solid border-slate-400'>
+                        <div className='flex justify-center pl-3 border-l-2 border-solid border-slate-400 text-sm lg:text-md'>
                             <SignedOut>
                                 <SignInButton />
                             </SignedOut>
                             <SignedIn>
                                 <UserButton />
                             </SignedIn>
-
                         </div>
                     </div>
                 </div>
