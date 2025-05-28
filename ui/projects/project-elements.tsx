@@ -2,6 +2,14 @@ import ProjectEl from './project-element';
 import HomepageProjectEl from './homepage-project-element'
 
 const projects = {
+  "Petezah-Next": {
+    "date": "5/9/25",
+    "desc": "Petezah-Next is the official next generation of PeteZah Games, built with Next.js and React. It will feature a modern design and improved performance.",
+    "type": "Proxy",
+    "status": "dev",
+    "imgUrl": "/petezah-logo-icon.png",
+    "prjUrl": "https://petezah-next.vercel.app/"
+  },
   "Lynx AI": {
     "date": "12/20/25",
     "desc": "Lynx AI is an AI-powered edicational tool which can be used to learn skills and other topics.",
