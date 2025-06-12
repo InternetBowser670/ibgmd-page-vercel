@@ -21,19 +21,17 @@ import {
   Html5Original,
   Css3Original,
   JavascriptOriginal,
-  CsharpPlain,
   PythonOriginal,
   TensorflowLine,
   Windows11Original,
-  GithubOriginal,
 } from "devicons-react";
 import { SocialIcon } from "react-social-icons";
 import { FadeInDiv } from "@/ui/fadeInDiv";
-import { useState, useEffect } from "react";
 import { LatestProjectElement } from "@/ui/projects/project-elements";
-import { space_700weight_italic, space_700weight } from "./fonts/fonts";
+import { space_700weight_italic } from "./fonts/fonts";
 import ScrollDown from "@/ui/homepage/scroll-indicator";
-import React from "react";
+import { SiGithub } from "@icons-pack/react-simple-icons";
+import { useState, useEffect } from "react";
 
 const jetbrains_400weight = JetBrains_Mono({
   weight: "400",
@@ -45,29 +43,13 @@ const jetbrains_800weight = JetBrains_Mono({
   subsets: ["latin"],
 });
 
-const TimeSince = ({ startDate }: { startDate: string }) => {
-  const [yearsAgo, setYearsAgo] = useState<string | null>(null); // Initially null to avoid mismatch
+export default function Page() {
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Now safe to update on client-side
-    const updateYearsAgo = () => {
-      const startTime = new Date(startDate).getTime();
-      const now = Date.now();
-      const yearsPassed = (now - startTime) / (1000 * 60 * 60 * 24 * 365.25);
-      setYearsAgo(yearsPassed.toFixed(9));
-    };
+    setMounted(true);
+  }, []);
 
-    const interval = setInterval(updateYearsAgo, 10);
-
-    return () => clearInterval(interval);
-  }, [startDate]);
-
-  if (yearsAgo === null) return null; // Prevent mismatch during SSR
-
-  return <span>{yearsAgo} year old</span>;
-};
-
-export default function Page() {
   return (
     <>
       <br />
@@ -134,45 +116,33 @@ export default function Page() {
         </div>
         <div className="p-5">
           <FadeInDiv>
-            <div className="w-full flex flex-col bg-black p-2 justify-center overflow-x-scroll content-center border-red-600 rounded-3xl py-3 border-2">
-              <div className="flex content-center justify-center items-center">
+            <div className="flex flex-col content-center justify-center w-full p-2 py-3 overflow-x-scroll bg-black border-2 border-red-600 rounded-3xl">
+              <div className="flex items-center content-center justify-center">
                 <p className={`${jetbrains_400weight.className}`}>
                   Programming with these tools:
                 </p>
               </div>
               <br />
-              <Marquee className="bg-gray-800 py-2" autoFill={true} speed={200}>
+              <Marquee className="py-2 bg-gray-800" autoFill={true} speed={200}>
                 <div className="flex ">
                   <NextjsOriginal
-                    className="rounded-full mx-5 border-white border-solid border-4"
+                    className="mx-5 border-4 border-white border-solid rounded-full"
                     size="100"
                   />
                   <div className="w-[100px] h-[100px] mx-5 rounded-full flex justify-center content-center bg-white">
                     <ExpressOriginal className="mt-3" size="80" />
                   </div>
-                  <TypescriptOriginal className="rounded-2xl mx-5" size="100" />
+                  <TypescriptOriginal className="mx-5 rounded-2xl" size="100" />
                   <ReactOriginal size="100" className="mx-5" />
                   <MongodbOriginal size="90" className="mx-5" />
                   <VscodeOriginal size={100} className="mx-5" />
                   <Html5Original size={100} className="mx-5" />
                   <Css3Original size={100} className="mx-5" />
-                  <JavascriptOriginal size={100} className="rounded-2xl mx-5" />
-                  <CsharpPlain
-                    stroke="white"
-                    strokeWidth={"3"}
-                    size={100}
-                    fill="white"
-                    className="mx-5"
-                  />
+                  <JavascriptOriginal size={100} className="mx-5 rounded-2xl" />
                   <PythonOriginal size={100} className="mx-5" />
                   <TensorflowLine size={100} className="mx-5" />
                   <Windows11Original size={100} className="mx-5" />
-                  <GithubOriginal
-                    size={100}
-                    stroke="white"
-                    strokeWidth={"3"}
-                    className="mx-5"
-                  />
+                  <SiGithub width={100} height={100} className="mx-5" />
                 </div>
               </Marquee>
               <br />
@@ -188,14 +158,14 @@ export default function Page() {
         <br />
 
         <FadeInDiv>
-          <div className="border-solid border-2 shrink overflow-x-scroll bg-black border-red-600 rounded-3xl p-5 m-5">
+          <div className="p-5 m-5 overflow-x-scroll bg-black border-2 border-red-600 border-solid shrink rounded-3xl">
             <div
               className={
                 "flex justify-center" + " " + jetbrains_800weight.className
               }
             >
               <Link className="flex" href="/projects">
-                Click <p className="underline mx-2"> here </p>to see my projects
+                Click <p className="mx-2 underline"> here </p>to see my projects
               </Link>
             </div>
             <br />
@@ -209,32 +179,37 @@ export default function Page() {
         <br />
 
         <FadeInDiv>
-          <div className="border-solid border-2 bg-black border-red-600 rounded-3xl p-5 m-5">
-            <SignedOut>
-              <div
-                className={
-                  "text-4xl flex justify-center shrink text-blue-500 animate-rainbowText text-ellipsis" +
-                  " " +
-                  jetbrains_800weight.className
-                }
-              >
-                <SignInButton />
-              </div>
-            </SignedOut>
-            <SignedIn>
-              <div
-                className={
-                  "text-4xl flex justify-center text-blue-500 animate-rainbowText text-ellipsis" +
-                  " " +
-                  jetbrains_800weight.className
-                }
-              >
-                <UserButton />
-                <div className="flex justify-center ml-3 pl-3 border-l-2 border-solid border-slate-400">
-                  <SignOutButton />
-                </div>
-              </div>
-            </SignedIn>
+          <div className="p-5 m-5 bg-black border-2 border-red-600 border-solid rounded-3xl">
+            {mounted && (
+              <>
+                {" "}
+                <SignedOut>
+                  <div
+                    className={
+                      "text-4xl flex justify-center shrink text-blue-500 animate-rainbowText text-ellipsis" +
+                      " " +
+                      jetbrains_800weight.className
+                    }
+                  >
+                    <SignInButton />
+                  </div>
+                </SignedOut>
+                <SignedIn>
+                  <div
+                    className={
+                      "text-4xl flex justify-center text-blue-500 animate-rainbowText text-ellipsis" +
+                      " " +
+                      jetbrains_800weight.className
+                    }
+                  >
+                    <UserButton />
+                    <div className="flex justify-center pl-3 ml-3 border-l-2 border-solid border-slate-400">
+                      <SignOutButton />
+                    </div>
+                  </div>
+                </SignedIn>
+              </>
+            )}
           </div>
         </FadeInDiv>
         <ScrollDown />
