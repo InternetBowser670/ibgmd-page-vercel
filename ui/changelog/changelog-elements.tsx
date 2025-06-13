@@ -3,6 +3,11 @@ import HomepageChangelogEl from './homepage-changelog-element'
 import React from 'react';
 
 const versions = {
+  "1.13.1": {
+    "date": "6/13/25",
+    "changes": "Fixed the scroll bar bug in the hero section",
+    "type": "site"
+  },
   "1.13.0": {
     "date": "5/27/25",
     "changes": "Added PeteZah Games to the project list",

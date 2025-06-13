@@ -54,7 +54,7 @@ export default function Page() {
     <>
       <br />
       <br />
-      <main className="overflow-x-hidden">
+      <main className="h-full overflow-x-hidden">
         <div
           className={`w-[99vw] animate-fade flex italic h-[100vh] ${space_700weight_italic.className}`}
         >
