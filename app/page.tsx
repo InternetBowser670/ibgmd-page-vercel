@@ -24,14 +24,19 @@ import {
   PythonOriginal,
   TensorflowLine,
   Windows11Original,
+  WebstormOriginal,
+  TailwindcssOriginal,
+  DiscordjsPlain 
 } from "devicons-react";
 import { SocialIcon } from "react-social-icons";
 import { FadeInDiv } from "@/ui/fadeInDiv";
 import { LatestProjectElement } from "@/ui/projects/project-elements";
 import { space_700weight_italic } from "./fonts/fonts";
 import ScrollDown from "@/ui/homepage/scroll-indicator";
-import { SiGithub } from "@icons-pack/react-simple-icons";
+import { SiGithub, SiClerk, SiMarkdown } from "@icons-pack/react-simple-icons";
 import { useState, useEffect } from "react";
+
+//i love having a page of imports
 
 const jetbrains_400weight = JetBrains_Mono({
   weight: "400",
@@ -123,26 +128,53 @@ export default function Page() {
                 </p>
               </div>
               <br />
-              <Marquee className="py-2 bg-gray-800" autoFill={true} speed={200}>
+              <Marquee className="py-2 bg-gray-800" style={{
+                WebkitMaskImage:
+                  "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+                maskImage:
+                  "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+                WebkitMaskRepeat: "no-repeat",
+                maskRepeat: "no-repeat",
+                WebkitMaskSize: "100% 100%",
+                maskSize: "100% 100%",
+              }} autoFill={true} speed={200}>
+                <div className="flex">
+                  <VscodeOriginal size={100} className="mx-5" />
+                  <SiClerk width={100} height={100} className="mx-5" />
+                  <div className="w-[100px] h-[100px] mx-5 rounded-full flex justify-center content-center bg-white">
+                    <ExpressOriginal className="mt-3" size="80" />
+                  </div>
+                  <TensorflowLine size={100} className="mx-5" />
+                  <MongodbOriginal size="90" className="mx-5" />
+                  <Windows11Original size={100} className="mx-5" />
+                  <SiGithub width={100} height={100} className="mx-5" />
+                  <TailwindcssOriginal size={100} className="mx-5" />
+                  <DiscordjsPlain size={100} className="mx-5" />
+                  <WebstormOriginal size={100} className="mx-5" />
+                </div>
+              </Marquee>
+              <Marquee direction="right" className="py-2 bg-gray-800 border-t-2 border-t-black" style={{
+                WebkitMaskImage:
+                  "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+                maskImage:
+                  "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+                WebkitMaskRepeat: "no-repeat",
+                maskRepeat: "no-repeat",
+                WebkitMaskSize: "100% 100%",
+                maskSize: "100% 100%",
+              }} autoFill={true} speed={200}>
                 <div className="flex ">
                   <NextjsOriginal
                     className="mx-5 border-4 border-white border-solid rounded-full"
                     size="100"
                   />
-                  <div className="w-[100px] h-[100px] mx-5 rounded-full flex justify-center content-center bg-white">
-                    <ExpressOriginal className="mt-3" size="80" />
-                  </div>
                   <TypescriptOriginal className="mx-5 rounded-2xl" size="100" />
                   <ReactOriginal size="100" className="mx-5" />
-                  <MongodbOriginal size="90" className="mx-5" />
-                  <VscodeOriginal size={100} className="mx-5" />
+                  <SiMarkdown width={100} height={100} className="mx-5" />
+                  <PythonOriginal size={100} className="mx-5" />
                   <Html5Original size={100} className="mx-5" />
                   <Css3Original size={100} className="mx-5" />
                   <JavascriptOriginal size={100} className="mx-5 rounded-2xl" />
-                  <PythonOriginal size={100} className="mx-5" />
-                  <TensorflowLine size={100} className="mx-5" />
-                  <Windows11Original size={100} className="mx-5" />
-                  <SiGithub width={100} height={100} className="mx-5" />
                 </div>
               </Marquee>
               <br />
