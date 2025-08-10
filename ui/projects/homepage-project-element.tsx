@@ -29,7 +29,7 @@ export default function HomepageProjectEl(props: Project) {
 
   return (
     <>
-      <div className="justify-self-center w-[30vw] self-center bg-black border-2 p-5 rounded-2xl overflow-x-scroll flex flex-col justify-center content-center border-blue-500 border-solid m-2">
+      <div className="justify-self-center w-[30vw] self-center bg-black border-2 p-5 rounded-2xl overflow-x-auto flex flex-col justify-center content-center border-blue-500 border-solid m-2">
         <div className="flex flex-col justify-center">
           <div className="flex flex-row justify-between">
             <div className="flex">

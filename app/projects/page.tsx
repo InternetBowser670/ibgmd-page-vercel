@@ -19,7 +19,7 @@ export default function Page() {
             <br />
             <main>
                 <div className='flex flex-col justify-center items-center'>
-                    <div className='justify-self-center w-[30vw] self-center bg-black border-2 p-5 rounded-2xl flex flex-col justify-center content-center overflow-x-scroll border-blue-500 border-solid m-2"'>
+                    <div className='justify-self-center w-[30vw] self-center bg-black border-2 p-5 rounded-2xl flex flex-col justify-center content-center overflow-x-auto border-blue-500 border-solid m-2"'>
                         <h1 className={"text-3xl" + " " + jetbrains_800weight.className}>
                             Key:
                         </h1>

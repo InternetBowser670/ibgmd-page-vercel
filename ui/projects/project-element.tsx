@@ -33,7 +33,7 @@ export default function ProjectEl(props: Project) {
 
   return (
     <>
-      <div className="w-[40vw] bg-black justify-self-center overflow-x-scroll self-center border-2 p-5 rounded-2xl flex flex-col justify-center content-center border-red-600 border-solid m-2">
+      <div className="w-[40vw] bg-black justify-self-center overflow-x-auto self-center border-2 p-5 rounded-2xl flex flex-col justify-center content-center border-red-600 border-solid m-2">
         <div className="flex flex-col justify-center">
           <div className="flex flex-row justify-between">
             <div className="flex">
