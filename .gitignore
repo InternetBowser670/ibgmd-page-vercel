@@ -42,3 +42,6 @@ internetbowser-15606-firebase-adminsdk-fkjn4-bc6757279e.json
 next-env.d.ts
 
 .vercel
+
+# clerk configuration (can include secrets)
+/.clerk/

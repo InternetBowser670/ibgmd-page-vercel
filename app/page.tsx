@@ -26,7 +26,8 @@ import {
   Windows11Original,
   WebstormOriginal,
   TailwindcssOriginal,
-  DiscordjsPlain 
+  DiscordjsPlain,
+  ArchlinuxOriginal
 } from "devicons-react";
 import { SocialIcon } from "react-social-icons";
 import { FadeInDiv } from "@/ui/fadeInDiv";
@@ -121,7 +122,7 @@ export default function Page() {
         </div>
         <div className="p-5">
           <FadeInDiv>
-            <div className="flex flex-col content-center justify-center w-full p-2 py-3 overflow-x-scroll bg-black border-2 border-red-600 rounded-3xl">
+            <div className="flex flex-col content-center justify-center w-full p-2 py-3 overflow-x-auto bg-black border-2 border-red-600 rounded-3xl">
               <div className="flex items-center content-center justify-center">
                 <p className={`${jetbrains_400weight.className}`}>
                   Programming with these tools:
@@ -175,6 +176,7 @@ export default function Page() {
                   <Html5Original size={100} className="mx-5" />
                   <Css3Original size={100} className="mx-5" />
                   <JavascriptOriginal size={100} className="mx-5 rounded-2xl" />
+                  <ArchlinuxOriginal size={100} className="mx-5" />
                 </div>
               </Marquee>
               <br />
@@ -190,7 +192,7 @@ export default function Page() {
         <br />
 
         <FadeInDiv>
-          <div className="p-5 m-5 overflow-x-scroll bg-black border-2 border-red-600 border-solid shrink rounded-3xl">
+          <div className="p-5 m-5 overflow-x-auto bg-black border-2 border-red-600 border-solid shrink rounded-3xl">
             <div
               className={
                 "flex justify-center" + " " + jetbrains_800weight.className
