@@ -2,19 +2,27 @@ import ProjectEl from './project-element';
 import HomepageProjectEl from './homepage-project-element'
 
 const projects = {
+  "ChipIn": {
+    "date": "10/22/25",
+    "desc": "ChipIn is my free online \"gambling\" platform where users can play games of chance using virtual currency. It will feature various mini-games and a leaderboard system.",
+    "type": "Gaming",
+    "status": "dev",
+    "imgUrl": "/chip-in-logo.png",
+    "prjUrl": "https://chip-in.internetbowser.com/"
+  },
   "Petezah-Next": {
     "date": "5/9/25",
-    "desc": "Petezah-Next is the official next generation of PeteZah Games, built with Next.js and React. It will feature a modern design and improved performance.",
+    "desc": "Petezah-Next is the official next generation of PeteZah Games, built with Next.js and React. It features a modern design and improved performance.",
     "type": "Proxy",
-    "status": "dev",
+    "status": "active",
     "imgUrl": "/petezah-logo-icon.png",
-    "prjUrl": "https://petezah-next.vercel.app/"
+    "prjUrl": "https://next.petezahgames.com/"
   },
   "Lynx AI": {
     "date": "12/20/25",
     "desc": "Lynx AI is an AI-powered edicational tool which can be used to learn skills and other topics.",
     "type": "AI",
-    "status": "dev",
+    "status": "active",
     "imgUrl": "/lynx-logo-icon.png",
     "prjUrl": "https://lynx-ai-demo.com"
   },

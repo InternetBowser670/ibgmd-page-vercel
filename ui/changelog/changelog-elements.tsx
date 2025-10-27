@@ -3,6 +3,11 @@ import HomepageChangelogEl from './homepage-changelog-element'
 import React from 'react';
 
 const versions = {
+  "1.15.0": {
+    "date": "10/26/25",
+    "changes": "Added ChipIn to the project list",
+    "type": "site"
+  },
   "1.14.0": {
     "date": "6/13/25",
     "changes": "Added the some more icons to the homepage marquee and split it up into two seperate tracks",
