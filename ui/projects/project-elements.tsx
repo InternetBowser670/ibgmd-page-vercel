@@ -28,11 +28,11 @@ const projects = {
   },
   "Convoes": {
     "date": "8/15/24",
-    "desc": "My first major online project, Convoes was an online chatting service. This project has now been deleted",
+    "desc": "My first major online project, Convoes was an online chatting service. This project is still available, and while Convoes 2 technically has more features, this is far less buggy.",
     "type": "Social",
-    "status": "terminated",
+    "status": "active",
     "imgUrl": undefined,
-    "prjUrl": undefined
+    "prjUrl": "https://convoes.internetbowser.com"
   }
 }
 
