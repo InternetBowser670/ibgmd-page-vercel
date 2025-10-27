@@ -6,23 +6,16 @@ const nextConfig: NextConfig = {
     return [
     ];
   },
+
   images: {
     domains: ['www.internetbowser.com'],
   },
-  experimental: {
-    turbo: {
-      rules: {
-        '*.svg': {
-          loaders: ['@svgr/webpack'],
-          as: '*.js',
-        },
-      },
-    },
-  },
+
   webpack: (config) => {
     config.resolve.alias['@'] = path.resolve(__dirname);
     return config;
   },
+
   async rewrites() {
     return [
       {
@@ -38,6 +31,14 @@ const nextConfig: NextConfig = {
     ];
   },
 
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: ['@svgr/webpack'],
+        as: '*.js',
+      },
+    }
+  }
 };
 
 export default nextConfig;
