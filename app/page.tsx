@@ -104,7 +104,7 @@ export default function Page() {
                     />
                     <SocialIcon
                       className="m-2"
-                      url="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=joshua.ghattas@gmail.com&tf=1"
+                      url="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=internetbowser@gmail.com&tf=1"
                     />
                     <SocialIcon
                       className="m-2"
