@@ -22,7 +22,7 @@
     "@vercel/analytics": "^1.4.1",
     "@vercel/speed-insights": "^1.1.0",
     "class-variance-authority": "^0.7.1",
-    "clerk": "^0.6.1",
+    "clerk": "^0.8.3",
     "clsx": "^2.1.1",
     "devicons-react": "^1.4.0",
     "dotenv": "^16.4.7",
