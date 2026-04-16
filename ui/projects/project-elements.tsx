@@ -6,7 +6,7 @@ const projects = {
     "date": "10/22/25",
     "desc": "ChipIn is my free online \"gambling\" platform where users can play games of chance using virtual currency. It will feature various mini-games and a leaderboard system.",
     "type": "Gaming",
-    "status": "dev",
+    "status": "active",
     "imgUrl": "/chip-in-logo.png",
     "prjUrl": "https://chip-in.internetbowser.com/"
   },
